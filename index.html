@@ -12,8 +12,50 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/spritesheet.css" />
   </head>
-  <body style="text-align: center">
-    <a href="#" class="btn--primary">Réservez Maintenant</a>
+  <body>
+    <div style="max-width: 1440px margin: 0 0 0 auto">
+      <div class="section__hero">
+        <div class="section__header">
+          <div>
+            <h2>Chef Privé</h2>
+            <img
+              class="section__virgule"
+              src="medias/pictos/virgule.png"
+              alt=""
+            />
+          </div>
+          <img
+            class="section__picto"
+            src="medias/pictos/chef.png"
+            alt="Cloche"
+          />
+        </div>
+        <picture class="section__picture">
+          <source
+            type="image/webp"
+            srcset="
+              medias/images/cedrat_380.webp   380w,
+              medias/images/cedrat_900.webp   900w,
+              medias/images/cedrat_1238.webp 1238w
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              medias/images/cedrat_380.jpg   380w,
+              medias/images/cedrat_900.jpg   900w,
+              medias/images/cedrat_1238.jpg 1238w
+            "
+          />
+          <img
+            class="section__image"
+            src="medias/images/cedrat_1238.jpg"
+            alt="Dessert cedrat"
+          />
+        </picture>
+      </div>
+    </div>
   </body>
 </html>
