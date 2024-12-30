@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petru HAMON - Private Chef</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/sandbox.css" />
+  </head>
+  <body>
+    <div class="grid grid--1x2 section__hero">
+      <div class="section__hero__header">
+        <h2>Chef Privé</h2>
+        <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+        <img class="picto" src="medias/pictos/chef.png" alt="" />
+      </div>
+      <picture class="section__hero__picture">
+        <img
+          sizes="(max-width: 1238px) 100vw, 1238px"
+          type="image/webp"
+          srcset="
+            medias/images/cedrat@380.webp   380w,
+            medias/images/cedrat@900.webp   900w,
+            medias/images/cedrat@1238.webp 1238w
+          "
+          type="image/jpg"
+          srcset="
+            medias/images/cedrat@380.jpg   380w,
+            medias/images/cedrat@900.jpg   900w,
+            medias/images/cedrat@1238.jpg 1238w
+          "
+          class="section__hero__image"
+          src="medias/images/cedrat@1238.jpg"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div class="media">
+      <picture class="media__image"
+        ><img
+          sizes="(max-width: 480px) 100vw, 480px"
+          type="image/webp"
+          srcset="
+            medias/images/petru@320.webp 320w,
+            medias/images/petru@480.webp 480w
+          "
+          type="image/jpg"
+          srcset="
+            medias/images/petru@320.jpg 320w,
+            medias/images/petru@480.jpg 480w
+          "
+          class="media__image"
+          src="medias/images/petru@480.jpg"
+          alt=""
+      /></picture>
+      <div class="media__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+          doloremque.
+        </p>
+      </div>
+    </div>
+    <div class="bottom"></div>
+  </body>
+</html>
