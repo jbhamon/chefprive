@@ -193,11 +193,15 @@ a {
   position: relative;
   top: -20px;
 }
-.media__image {
+.media:nth-of-type(odd) {
+  top: 0;
+}
+.media__picture {
   display: grid;
+}
+.media__image {
   justify-self: center;
-  max-width: 480px;
-  width: 90%;
+  width: 80%;
 }
 .media__content {
   color: black;
@@ -215,14 +219,20 @@ a {
     column-gap: 2vw;
     top: -30px;
   }
-  .media__image {
+  .media__picture {
     justify-self: right;
+    width: 80%;
   }
-  .media__image image {
+  .media__image {
     justify-self: end;
     width: 80%;
   }
   .bottom {
     top: -60px;
+  }
+}
+@media screen and (min-width: 1792px) {
+  .media__image {
+    width: 60%;
   }
 }
