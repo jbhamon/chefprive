@@ -182,9 +182,6 @@ a {
   position: relative;
   top: -20px;
 }
-.media:nth-of-type(odd) {
-  top: 0;
-}
 .media__picture {
   display: grid;
 }
