@@ -179,13 +179,16 @@ a {
 /* Medias */
 .top,
 .bottom {
-  height: 20vh;
   background: var(--color-primary);
+  height: 20vh;
 }
 .bottom {
   position: relative;
   top: -40px;
   z-index: -5;
+}
+.bottom:last-of-type {
+  top: -80px;
 }
 .media {
   display: grid;
@@ -201,10 +204,21 @@ a {
   width: 80%;
 }
 .media__content {
-  color: black;
   align-self: center;
-  padding-right: 1rem;
+  color: black;
   max-width: 500px;
+  padding-right: 1rem;
+}
+.media-2 {
+  top: -60px;
+}
+.media-2 > .media__picture {
+  order: 1;
+}
+.media-2 > .media__content {
+  padding-left: 1rem;
+  padding-right: 0;
+  text-align: right;
 }
 @media screen and (max-width: 440px) {
   .media__content {
@@ -213,19 +227,37 @@ a {
 }
 @media screen and (min-width: 768px) {
   .media {
-    column-gap: 2vw;
     top: -30px;
   }
   .media__picture {
-    justify-self: right;
+    justify-self: center;
     width: 80%;
   }
   .media__image {
     justify-self: end;
     width: 80%;
   }
+  .media__content {
+    padding-left: 2vw;
+  }
+  .media-2 {
+    top: -90px;
+  }
+  .media-2 > .media__picture {
+    justify-self: center;
+  }
+  .media-2 .media__image {
+    justify-self: start;
+  }
+  .media-2 > .media__content {
+    justify-self: right;
+    padding-right: 2vw;
+  }
   .bottom {
     top: -60px;
+  }
+  .bottom:last-of-type {
+    top: -120px;
   }
 }
 @media screen and (min-width: 1792px) {
