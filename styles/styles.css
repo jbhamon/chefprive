@@ -264,3 +264,21 @@ a {
     width: 60%;
   }
 }
+
+/* Articles */
+article {
+  padding: 4rem;
+  font-weight: 300;
+  word-spacing: 5px;
+}
+.column {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .article {
+    padding: 0;
+  }
+  .column:nth-of-type(even) {
+    margin-left: 5vw;
+  }
+}
