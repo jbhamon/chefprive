@@ -165,6 +165,7 @@ a {
 }
 .section__hero__picture {
   justify-self: left;
+  line-height: 0;
   width: 100%;
 }
 .section__hero__image {
