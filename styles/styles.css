@@ -49,6 +49,7 @@ h4 {
   font-weight: 600;
   letter-spacing: 5px;
   margin: 0;
+  text-align: center;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 h1 {
@@ -139,6 +140,39 @@ a {
 .picto {
   display: block;
   width: 250px;
+}
+.comment--1 {
+  margin: 0 0 0 auto;
+  display: block;
+  transform: rotateY(180deg) rotateZ(10deg);
+  width: 200px;
+}
+.comment--2 {
+  margin: 0 auto 0 0;
+  display: block;
+  position: relative;
+  overlay: none;
+  top: -5px;
+  left: -10px;
+  width: 200px;
+}
+.comment--1 {
+  position: relative;
+  top: -15px;
+}
+.silhouette {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .comment--1,
+  .comment--2 {
+    width: 300px;
+  }
+  .silhouette {
+    width: auto;
+  }
 }
 
 /* Grids */
@@ -295,8 +329,17 @@ article {
   margin: 7rem auto;
   min-height: 500px;
   padding: 3rem 2rem;
-  text-align: center;
   width: 300px;
+}
+.card__header {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+.card > p {
+  color: black;
 }
 .card--shadow {
   border-radius: 20px;
@@ -337,13 +380,6 @@ article {
 .card--process {
   margin: 0 auto;
 }
-.card--process > h3 {
-  color: var(--color-primary);
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-}
 .card--process > p {
   color: black;
 }
@@ -368,4 +404,9 @@ article {
   .card--process > h3 {
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   }
+}
+
+/* Testimonial Cards */
+.card--testimonial {
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
 }
