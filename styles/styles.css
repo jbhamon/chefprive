@@ -1,6 +1,7 @@
 :root {
   --color-primary: #5a745e;
   --color-button: #7b917e;
+  --color-checkbox: #223026;
 }
 
 *,
@@ -348,6 +349,22 @@ article {
 .card--background--wg {
   background: linear-gradient(to bottom, white 25%, var(--color-primary) 25%);
 }
+.card--background--gw {
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary) 140px,
+    white 140px
+  );
+}
+@media screen and (min-width: 768px) {
+  .card--background--gw {
+    background: linear-gradient(
+      to bottom,
+      var(--color-primary) 170px,
+      white 170px
+    );
+  }
+}
 .card__image {
   border-radius: 3px;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
@@ -409,4 +426,83 @@ article {
 /* Testimonial Cards */
 .card--testimonial {
   font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+}
+
+/* Formula Card */
+.formula__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.formula__title {
+  text-align: left;
+}
+.formula-container {
+  grid-template-columns: auto 1fr;
+  margin-top: 6rem;
+}
+.bullet {
+  position: relative;
+  width: 20px;
+  top: 7px;
+  left: -5px;
+}
+.formula-item {
+  color: black;
+  margin: 0 0 1.5rem 10px;
+  align-self: center;
+}
+/* TODO : 
+ - Add formula-item last-of-type margin-bottom to 0rem
+ - Increase left margin for formula header for 768px and wider screens
+ */
+@media screen and (min-width: 768px) {
+  .formula__header > h4 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .formula-container {
+    margin-top: 10rem;
+  }
+}
+/* Checkbox */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  height: 60px;
+  width: 60px;
+}
+.custom-checkbox .checkmark {
+  position: relative;
+  left: -5px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background: white;
+  border: 2px solid var(--color-checkbox);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.15s;
+}
+.custom-checkbox .checkmark:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: -1px;
+  width: 7px;
+  height: 20px;
+  border: solid var(--color-checkbox);
+  border-width: 0 4px 5px 0;
+  transform: rotate(45deg);
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
 }
