@@ -32,11 +32,6 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 2rem;
-  }
-}
 
 /* TYPOGRAPHY */
 h1,
@@ -112,6 +107,21 @@ p {
   letter-spacing: 0.2rem;
   line-height: 1.7;
   margin: 0 auto;
+}
+.nav__item {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  justify-self: left;
+  letter-spacing: 2px;
+  line-height: 3;
+  padding-left: 2rem;
+  transition: color 0.15s;
+  word-spacing: 3px;
+}
+.nav__item:hover {
+  color: white;
 }
 .hero__tagline {
   color: white;
@@ -752,4 +762,18 @@ input[type="text"]:focus,
   .hero__gallery {
     padding-right: 3rem;
   }
+}
+
+/* NAV */
+.nav__item-container {
+  align-items: center;
+  display: flex;
+}
+.nav__icon {
+  height: 35px;
+  padding-left: 1rem;
+  transition: transform 0.3s;
+}
+.nav__item-container:hover .nav__icon {
+  transform: scale(1.25);
 }
