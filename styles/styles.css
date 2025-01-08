@@ -31,6 +31,7 @@ body {
     sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
+  padding: 0;
 }
 
 /* TYPOGRAPHY */
@@ -107,21 +108,6 @@ p {
   letter-spacing: 0.2rem;
   line-height: 1.7;
   margin: 0 auto;
-}
-.nav__item {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
-  font-size: 2rem;
-  font-weight: 400;
-  justify-self: left;
-  letter-spacing: 2px;
-  line-height: 3;
-  padding-left: 2rem;
-  transition: color 0.15s;
-  word-spacing: 3px;
-}
-.nav__item:hover {
-  color: white;
 }
 .hero__tagline {
   color: white;
@@ -717,7 +703,7 @@ input[type="text"]:focus,
 
 /* HERO */
 .hero {
-  margin: 0 auto;
+  margin: 10rem auto;
   max-width: 1440px;
 }
 .hero__header {
@@ -764,16 +750,151 @@ input[type="text"]:focus,
   }
 }
 
+/* COLLAPSIBLES */
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__heading {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.collapsible__heading:hover {
+  cursor: pointer;
+}
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.collapsible__chevron:hover {
+  cursor: pointer;
+}
+
 /* NAV */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2.5%;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  width: 95%;
+}
+.nav-brand {
+  margin-left: 1rem;
+  opacity: 0.5;
+  width: 50px;
+  transition: opacity 0.15s;
+}
+.nav__toggler {
+  fill: white;
+  height: 35px;
+  margin-right: 1rem;
+  opacity: 0.5;
+  width: 35px;
+  transition: all 0.25s;
+}
+.nav__toggler:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.nav__list {
+  background: var(--color-primary);
+  width: 100%;
+}
 .nav__item-container {
   align-items: center;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.3);
   display: flex;
+  margin: 0 auto;
+  width: 95%;
 }
 .nav__icon {
   height: 35px;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   transition: transform 0.3s;
+}
+.nav__item {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 4;
+  padding-left: 2rem;
+  transition: color 0.15s;
+  white-space: nowrap;
+  word-spacing: 3px;
+}
+.nav__item:hover {
+  color: white;
 }
 .nav__item-container:hover .nav__icon {
   transform: scale(1.25);
+}
+.nav.collapsible--expanded {
+  background: var(--color-primary);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav.collapsible--expanded .nav__toggler {
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px #666;
+  opacity: 1;
+}
+.nav.collapsible--expanded .nav-brand {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    align-items: center;
+    background: var(--color-primary);
+    flex-wrap: initial;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+  }
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+    width: auto;
+  }
+  .nav__item-container {
+    border: none;
+    width: initial;
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__item {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    white-space: initial;
+  }
+  .nav.collapsible--expanded {
+    border: none;
+    box-shadow: initial;
+  }
 }
