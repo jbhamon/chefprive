@@ -96,8 +96,7 @@ h5 {
 .card--formula .card__heading {
   text-align: left;
 }
-.author--male,
-.author--female {
+.author {
   color: var(--color-primary);
   font-style: italic;
   text-align: right;
@@ -236,6 +235,7 @@ a {
     width: 300px;
   }
   .silhouette {
+    max-width: 95%;
     width: auto;
   }
 }
@@ -495,16 +495,13 @@ article {
 .card--testimonial {
   font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
 }
-.author--male {
+.author {
+  margin-left: 65%;
   position: relative;
   text-align: left;
-  left: 66%;
+  white-space: wrap;
 }
 .author--female {
-  left: 63%;
-  margin-right: 3rem;
-  position: relative;
-  text-align: left;
   top: -15px;
 }
 
@@ -793,6 +790,7 @@ input[type="text"]:focus,
   position: fixed;
   top: 0;
   width: 95%;
+  z-index: 5000;
 }
 .nav-brand {
   margin-left: 1rem;
