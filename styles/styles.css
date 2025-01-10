@@ -818,15 +818,15 @@ input[type="text"]:focus,
 }
 .nav__item-container {
   align-items: center;
-  border-bottom: 0.1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.1px solid rgba(58, 73, 62, 0.6);
   display: flex;
   margin: 0 auto;
   width: 95%;
 }
 .nav__icon {
-  height: 35px;
   padding-left: 0.5rem;
   transition: transform 0.3s;
+  width: 61px;
 }
 .nav__item {
   color: rgba(255, 255, 255, 0.6);
@@ -882,8 +882,13 @@ input[type="text"]:focus,
     width: auto;
   }
   .nav__item-container {
-    border: none;
+    border-bottom: none;
+    border-right: 0.2px solid rgba(58, 73, 62, 1);
+    padding-right: 2rem;
     width: initial;
+  }
+  .nav__item-container:last-of-type {
+    border-right: none;
   }
   .nav__icon {
     display: none;

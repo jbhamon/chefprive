@@ -13,179 +13,49 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body style="background: #5a745e; height: 300vh">
-    <header>
-      <nav class="collapsible nav collapsible--expanded">
-        <a href="/"
-          ><img class="nav-brand" src="medias/pictos/ph.png" alt=""
-        /></a>
-        <svg class="nav__toggler">
-          <use xlink:href="medias/icons/menu.svg#menu"></use>
-        </svg>
-        <div class="collapsible__content nav__list">
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/chef.png" alt="" />
-            <a href="#" class="nav__item">Chef privé</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/cloche.png" alt="" />
-            <a href="#" class="nav__item">Ma cuisine</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/assiette.png" alt="" />
-            <a href="#" class="nav__item">À domicile</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/calendrier.png" alt="" />
-            <a href="#" class="nav__item">Le processus</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/rouleau.png" alt="" />
-            <a href="#" class="nav__item">Cours de pâtisserie</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/message.png" alt="" />
-            <a href="#" class="nav__item">Témoignages</a>
-          </div>
-          <div class="nav__item-container">
-            <img class="nav__icon" src="medias/pictos/contact.png" alt="" />
-            <a href="#" class="nav__item">Contact</a>
-          </div>
+  <body style="background: #5a745e; padding-top: 2rem; height: 300vh">
+    <nav class="collapsible nav collapsible--expanded">
+      <a href="/"
+        ><img class="nav-brand" src="medias/pictos/ph.png" alt=""
+      /></a>
+      <svg class="nav__toggler">
+        <use xlink:href="medias/icons/menu.svg#menu"></use>
+      </svg>
+      <div class="collapsible__content nav__list">
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/chef.svg" alt="" />
+          <a href="#" class="nav__item">Chef privé</a>
         </div>
-      </nav>
-    </header>
-    <div class="grid grid--1x2 hero">
-      <div class="hero__header">
-        <img
-          src="medias/pictos/petru-hamon.png"
-          alt="Logo Petru HAMON"
-          class="hero__picto"
-        />
-        <h1>Private Chef</h1>
-        <p class="hero__tagline">
-          Découvrez, chez vous,<br />l'excellence cullinaire !
-        </p>
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/cloche.svg" alt="" />
+          <a href="#" class="nav__item">Ma cuisine</a>
+        </div>
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/assiette.svg" alt="" />
+          <a href="#" class="nav__item">À domicile</a>
+        </div>
+        <div class="nav__item-container">
+          <img
+            class="nav__icon"
+            src="medias/pictos/svg/calendrier.svg"
+            alt=""
+          />
+          <a href="#" class="nav__item">Le processus</a>
+        </div>
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/rouleau.svg" alt="" />
+          <a href="#" class="nav__item">Cours de pâtisserie</a>
+        </div>
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/message.svg" alt="" />
+          <a href="#" class="nav__item">Témoignages</a>
+        </div>
+        <div class="nav__item-container">
+          <img class="nav__icon" src="medias/pictos/svg/contact.svg" alt="" />
+          <a href="#" class="nav__item">Contact</a>
+        </div>
       </div>
-      <div class="grid--4x3 hero__gallery">
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/chocolat@170.webp 170w,
-              medias/images/hero/chocolat@340.webp 340w,
-              medias/images/hero/chocolat@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/chocolat@170.jpg 170w,
-              medias/images/hero/chocolat@340.jpg 340w,
-              medias/images/hero/chocolat@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/chocolat@510.jpg"
-            alt="Dessert au chocolat dans sa fève de cacao"
-        /></picture>
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/table-vue@170.webp 170w,
-              medias/images/hero/table-vue@340.webp 340w,
-              medias/images/hero/table-vue@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/table-vue@170.jpg 170w,
-              medias/images/hero/table-vue@340.jpg 340w,
-              medias/images/hero/table-vue@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/table-vue@510.jpg"
-            alt="Table dressée avec vue en arrière plan"
-        /></picture>
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/entremet@170.webp 170w,
-              medias/images/hero/entremet@340.webp 340w,
-              medias/images/hero/entremet@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/entremet@170.jpg 170w,
-              medias/images/hero/entremet@340.jpg 340w,
-              medias/images/hero/entremet@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/entremet@510.jpg"
-            alt="Fin de dressage d'un entremet"
-        /></picture>
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/daurade@170.webp 170w,
-              medias/images/hero/daurade@340.webp 340w,
-              medias/images/hero/daurade@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/daurade@170.jpg 170w,
-              medias/images/hero/daurade@340.jpg 340w,
-              medias/images/hero/daurade@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/daurade@510.jpg"
-            alt="Carpaccio de daurade sur son galet de rivière"
-        /></picture>
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/betterave@170.webp 170w,
-              medias/images/hero/betterave@340.webp 340w,
-              medias/images/hero/betterave@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/betterave@170.jpg 170w,
-              medias/images/hero/betterave@340.jpg 340w,
-              medias/images/hero/betterave@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/betterave@510.jpg"
-            alt="Gargouillou de betterave"
-        /></picture>
-        <picture class="hero__picture"
-          ><img
-            sizes="(max-width: 510px) 30vw, 510px"
-            type="image/webp"
-            srcset="
-              medias/images/hero/pasteque@170.webp 170w,
-              medias/images/hero/pasteque@340.webp 340w,
-              medias/images/hero/pasteque@510.webp 510w
-            "
-            type="image/jpg"
-            srcset="
-              medias/images/hero/pasteque@170.jpg 170w,
-              medias/images/hero/pasteque@340.jpg 340w,
-              medias/images/hero/pasteque@510.jpg 510w
-            "
-            class="hero__image"
-            src="medias/images/hero/pasteque@510.jpg"
-            alt="Pastèque Yaourt"
-        /></picture>
-      </div>
-    </div>
-    <div class="btn-container">
-      <a href="#" class="btn--primary">Réservez Maintenant</a>
-    </div>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
