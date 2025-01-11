@@ -754,8 +754,21 @@ input[type="text"]:focus,
   overflow: hidden;
   transition: all 0.3s;
 }
+.collapsible__chevron {
+  background: url(../medias/icons/chevron.svg);
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+  width: 40px;
+}
+.collapsible__chevron:hover {
+  cursor: pointer;
+}
 .collapsible--expanded .collapsible__chevron {
+  background: url(../medias/icons/chevron__expanded.svg);
+  background-repeat: no-repeat;
   transform: rotate(0);
+  width: 40px;
 }
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
@@ -770,13 +783,6 @@ input[type="text"]:focus,
   margin-top: 0;
 }
 .collapsible__heading:hover {
-  cursor: pointer;
-}
-.collapsible__chevron {
-  transform: rotate(-90deg);
-  transition: transform 0.3s;
-}
-.collapsible__chevron:hover {
   cursor: pointer;
 }
 

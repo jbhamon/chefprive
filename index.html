@@ -14,48 +14,23 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body style="background: #5a745e; padding-top: 2rem; height: 300vh">
-    <nav class="collapsible nav collapsible--expanded">
-      <a href="/"
-        ><img class="nav-brand" src="medias/pictos/ph.png" alt=""
-      /></a>
-      <svg class="nav__toggler">
-        <use xlink:href="medias/icons/menu.svg#menu"></use>
-      </svg>
-      <div class="collapsible__content nav__list">
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/chef.svg" alt="" />
-          <a href="#" class="nav__item">Chef privé</a>
-        </div>
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/cloche.svg" alt="" />
-          <a href="#" class="nav__item">Ma cuisine</a>
-        </div>
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/assiette.svg" alt="" />
-          <a href="#" class="nav__item">À domicile</a>
-        </div>
-        <div class="nav__item-container">
-          <img
-            class="nav__icon"
-            src="medias/pictos/svg/calendrier.svg"
-            alt=""
-          />
-          <a href="#" class="nav__item">Le processus</a>
-        </div>
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/rouleau.svg" alt="" />
-          <a href="#" class="nav__item">Cours de pâtisserie</a>
-        </div>
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/message.svg" alt="" />
-          <a href="#" class="nav__item">Témoignages</a>
-        </div>
-        <div class="nav__item-container">
-          <img class="nav__icon" src="medias/pictos/svg/contact.svg" alt="" />
-          <a href="#" class="nav__item">Contact</a>
-        </div>
+    <footer>
+      <div class="footer__sections grid">
+        <section class="collapsible footer__section collapsible--expanded">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Services</h2>
+            <div class="collapsible__chevron chevron"></div>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li>Chef à domicile</li>
+              <li>Accord Mets/Vins</li>
+              <li>Cours de Pâtisserie</li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </nav>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
