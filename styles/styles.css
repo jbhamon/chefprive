@@ -106,8 +106,11 @@ a {
 
 /* BUTTONS */
 .btn-container {
-  margin-top: 5rem;
+  line-height: 1.5;
+  margin: 5rem auto 0;
+  padding-bottom: 8rem;
   text-align: center;
+  width: 100%;
 }
 .btn--primary {
   background: var(--color-button);
@@ -129,6 +132,9 @@ a {
   color: var(--color-primary);
 }
 @media screen and (min-width: 768px) {
+  .btn-container {
+    padding-bottom: 12rem;
+  }
   .btn--primary {
     font-size: 1.8rem;
     letter-spacing: 5px;
@@ -227,16 +233,74 @@ a {
   padding-inline-start: 0;
 }
 
+/* HERO */
+.hero {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding-top: 10rem;
+}
+.hero__header {
+  align-self: center;
+  text-align: center;
+}
+.hero__tagline {
+  color: white;
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+  margin-bottom: 5rem;
+}
+.hero__gallery {
+  display: grid;
+  padding: 1rem;
+  width: 100%;
+}
+.hero__image {
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.hero__picture:nth-of-type(1) {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+.hero__picture:nth-of-type(2) {
+  grid-row: 2 / span 3;
+  grid-column: 1 / span 1;
+}
+.hero__picture:nth-of-type(3) {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+}
+.hero__picture:nth-of-type(4) {
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 1;
+}
+.hero__picture:nth-of-type(5) {
+  grid-row: 1 / span 3;
+  grid-column: 3 / span 1;
+}
+.hero__picture:nth-of-type(6) {
+  grid-row: 4 / span 1;
+  grid-column: 3 / span 1;
+}
+@media screen and (min-width: 768px) {
+  .hero__tagline {
+    margin-bottom: 0;
+  }
+  .hero__gallery {
+    padding-right: 3rem;
+  }
+}
+
 /* SECTIONS HERO */
-.section {
+.section__hero {
   align-items: center;
-  background: var(--color-primary);
   justify-items: center;
   margin: 0 0 0 auto;
 }
 .section__header {
   bottom: -30px;
   position: relative;
+  padding-top: 6rem;
   text-align: center;
 }
 .section__heading {
@@ -255,12 +319,13 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .section__hero {
     justify-items: right;
     padding-bottom: 5rem;
   }
   .section__header {
     bottom: 0px;
+    padding-top: 10rem;
     right: -50px;
   }
 }
@@ -702,64 +767,6 @@ input[type="text"]:focus,
   }
 }
 
-/* HERO */
-.hero {
-  background: var(--color-primary);
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-.hero__header {
-  align-self: center;
-  text-align: center;
-}
-.hero__tagline {
-  color: white;
-  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
-  margin-bottom: 5rem;
-}
-.hero__gallery {
-  display: grid;
-  padding: 1rem;
-  width: 100%;
-}
-.hero__image {
-  border-radius: 3px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
-.hero__picture:nth-of-type(1) {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-}
-.hero__picture:nth-of-type(2) {
-  grid-row: 2 / span 3;
-  grid-column: 1 / span 1;
-}
-.hero__picture:nth-of-type(3) {
-  grid-row: 1 / span 2;
-  grid-column: 2 / span 1;
-}
-.hero__picture:nth-of-type(4) {
-  grid-row: 3 / span 2;
-  grid-column: 2 / span 1;
-}
-.hero__picture:nth-of-type(5) {
-  grid-row: 1 / span 3;
-  grid-column: 3 / span 1;
-}
-.hero__picture:nth-of-type(6) {
-  grid-row: 4 / span 1;
-  grid-column: 3 / span 1;
-}
-@media screen and (min-width: 768px) {
-  .hero__tagline {
-    margin-bottom: 0;
-  }
-  .hero__gallery {
-    padding-right: 3rem;
-  }
-}
-
 /* COLLAPSIBLES */
 .collapsible__header {
   display: flex;
@@ -998,4 +1005,55 @@ input[type="text"]:focus,
 .container {
   margin: 0 auto;
   max-width: 1440px;
+}
+
+/* BLOCKS */
+.block--primary {
+  --padding-vertical: 6rem;
+  background: var(--color-primary);
+}
+.block--white {
+  background: white;
+}
+.block--skewed--top--left {
+  clip-path: polygon(0 calc(0% + 5rem), 100% 0%, 100% 100%, 0% 100%);
+}
+.block--skewed--top--right {
+  clip-path: polygon(0 0, 100% calc(0% + 5rem), 100% 100%, 0% 100%);
+}
+.block--skewed--bottom--right {
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 5rem), 0% 100%);
+  line-height: 0;
+}
+.block--skewed--bottom--left {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 5rem));
+  line-height: 0;
+}
+@media screen and (min-width: 768px) {
+  .block--skewed--top--left {
+    clip-path: polygon(0 calc(0% + 8rem), 100% 0%, 100% 100%, 0% 100%);
+  }
+  .block--skewed--top--right {
+    clip-path: polygon(0 0, 100% calc(0% + 8rem), 100% 100%, 0% 100%);
+  }
+  .block--skewed--bottom--right {
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 8rem), 0% 100%);
+  }
+  .block--skewed--bottom--left {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 8rem));
+  }
+}
+@media screen and (min-width: 1440px) {
+  .block--skewed--top--left {
+    clip-path: polygon(0 calc(0% + 12rem), 100% 0%, 100% 100%, 0% 100%);
+  }
+  .block--skewed--top--right {
+    clip-path: polygon(0 0, 100% calc(0% + 12rem), 100% 100%, 0% 100%);
+  }
+  .block--skewed--bottom--right {
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 12rem), 0% 100%);
+  }
+  .block--skewed--bottom--left {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 12rem));
+  }
 }
