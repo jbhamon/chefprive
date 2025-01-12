@@ -13,77 +13,287 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body style="background: #5a745e; padding-top: 2rem; height: 300vh">
-    <footer class="container">
-      <div class="footer__sections grid">
-        <section class="footer__section collapsible collapsible--expanded">
-          <div class="collapsible__header footer__header">
-            <h2 class="collapsible__heading footer__heading">Services</h2>
+  <body>
+    <header class="block--primary">
+      <nav class="collapsible nav collapsible--expanded">
+        <a href="/"
+          ><img class="nav-brand" src="medias/pictos/ph.png" alt=""
+        /></a>
+        <svg class="nav__toggler">
+          <use xlink:href="medias/icons/menu.svg#menu"></use>
+        </svg>
+        <div class="collapsible__content nav__list">
+          <div class="nav__item-container">
+            <img class="nav__icon" src="medias/pictos/svg/chef.svg" alt="" />
+            <a href="#" class="nav__item">Chef privé</a>
+          </div>
+          <div class="nav__item-container">
+            <img class="nav__icon" src="medias/pictos/svg/cloche.svg" alt="" />
+            <a href="#" class="nav__item">Ma cuisine</a>
+          </div>
+          <div class="nav__item-container">
             <img
-              src="medias/icons/chevron--green.svg"
+              class="nav__icon"
+              src="medias/pictos/svg/assiette.svg"
               alt=""
-              class="collapsible__chevron"
             />
+            <a href="#" class="nav__item">À domicile</a>
           </div>
-          <div class="collapsible__content">
-            <ul class="list footer__list">
-              <li class="footer__list-item"><a href="#">Chef à domicile</a></li>
-              <li class="footer__list-item">
-                <a href="#">Accord Mets/Vins</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#">Cours de Pâtisserie</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__section collapsible collapsible--expanded">
-          <div class="collapsible__header footer__header">
-            <h2 class="collapsible__heading footer__heading">Réseaux</h2>
+          <div class="nav__item-container">
             <img
-              src="medias/icons/chevron--green.svg"
+              class="nav__icon"
+              src="medias/pictos/svg/calendrier.svg"
               alt=""
-              class="collapsible__chevron"
             />
+            <a href="#" class="nav__item">Le processus</a>
           </div>
-          <div class="collapsible__content">
-            <ul class="list footer__list">
-              <li class="footer__list-item">petruc.hamon@gmail.com</li>
-              <li class="footer__list-item">instagram: @petru.hamon</li>
-              <li class="footer__list-item">www.privatechef.com</li>
-            </ul>
+          <div class="nav__item-container">
+            <img class="nav__icon" src="medias/pictos/svg/rouleau.svg" alt="" />
+            <a href="#" class="nav__item">Cours de pâtisserie</a>
           </div>
-        </section>
-        <section class="footer__section collapsible collapsible--expanded">
-          <div class="collapsible__header footer__header">
-            <h2 class="collapsible__heading footer__heading">Contact</h2>
+          <div class="nav__item-container">
+            <img class="nav__icon" src="medias/pictos/svg/message.svg" alt="" />
+            <a href="#" class="nav__item">Témoignages</a>
+          </div>
+          <div class="nav__item-container">
+            <img class="nav__icon" src="medias/pictos/svg/contact.svg" alt="" />
+            <a href="#" class="nav__item">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hero>
+      <div class="block--primary block--skewed--bottom--right">
+        <div class="container grid grid--1x2 hero">
+          <div class="hero__header">
             <img
-              src="medias/icons/chevron--green.svg"
-              alt=""
-              class="collapsible__chevron"
+              src="medias/pictos/petru-hamon.png"
+              alt="Logo Petru HAMON"
+              class="hero__picto"
             />
+            <h1>Private Chef</h1>
+            <p class="hero__tagline">
+              Découvrez, chez vous,<br />l'excellence cullinaire !
+            </p>
           </div>
-          <div class="collapsible__content">
-            <ul class="list footer__list">
-              <li class="footer__list-item">23, av.Crovetto Frères</li>
-              <li class="footer__list-item">98000 MONACO</li>
-              <br />
-              <li class="footer__list-item">Rte de Belgodère</li>
-              <li class="footer__list-item">Lieu-dit l'Ombria</li>
-              <li class="footer__list-item">20226 BELGODÈRE</li>
-            </ul>
+          <div class="grid--4x3 hero__gallery">
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/chocolat@170.webp 170w,
+                  medias/images/hero/chocolat@340.webp 340w,
+                  medias/images/hero/chocolat@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/chocolat@170.jpg 170w,
+                  medias/images/hero/chocolat@340.jpg 340w,
+                  medias/images/hero/chocolat@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/chocolat@510.jpg"
+                alt="Dessert au chocolat dans sa fève de cacao"
+            /></picture>
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/table-vue@170.webp 170w,
+                  medias/images/hero/table-vue@340.webp 340w,
+                  medias/images/hero/table-vue@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/table-vue@170.jpg 170w,
+                  medias/images/hero/table-vue@340.jpg 340w,
+                  medias/images/hero/table-vue@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/table-vue@510.jpg"
+                alt="Table dressée avec vue en arrière plan"
+            /></picture>
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/entremet@170.webp 170w,
+                  medias/images/hero/entremet@340.webp 340w,
+                  medias/images/hero/entremet@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/entremet@170.jpg 170w,
+                  medias/images/hero/entremet@340.jpg 340w,
+                  medias/images/hero/entremet@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/entremet@510.jpg"
+                alt="Fin de dressage d'un entremet"
+            /></picture>
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/daurade@170.webp 170w,
+                  medias/images/hero/daurade@340.webp 340w,
+                  medias/images/hero/daurade@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/daurade@170.jpg 170w,
+                  medias/images/hero/daurade@340.jpg 340w,
+                  medias/images/hero/daurade@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/daurade@510.jpg"
+                alt="Carpaccio de daurade sur son galet de rivière"
+            /></picture>
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/betterave@170.webp 170w,
+                  medias/images/hero/betterave@340.webp 340w,
+                  medias/images/hero/betterave@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/betterave@170.jpg 170w,
+                  medias/images/hero/betterave@340.jpg 340w,
+                  medias/images/hero/betterave@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/betterave@510.jpg"
+                alt="Gargouillou de betterave"
+            /></picture>
+            <picture class="hero__picture"
+              ><img
+                sizes="(max-width: 510px) 30vw, 510px"
+                type="image/webp"
+                srcset="
+                  medias/images/hero/pasteque@170.webp 170w,
+                  medias/images/hero/pasteque@340.webp 340w,
+                  medias/images/hero/pasteque@510.webp 510w
+                "
+                type="image/jpg"
+                srcset="
+                  medias/images/hero/pasteque@170.jpg 170w,
+                  medias/images/hero/pasteque@340.jpg 340w,
+                  medias/images/hero/pasteque@510.jpg 510w
+                "
+                class="hero__image"
+                src="medias/images/hero/pasteque@510.jpg"
+                alt="Pastèque Yaourt"
+            /></picture>
           </div>
-        </section>
-        <div class="footer__brand">
-          <img
-            src="medias/pictos/ph-private-chef.png"
-            alt=""
-            class="footer__brand"
-          />
-          <p class="footer__copyright">Copyright &#169; 2025 JBHamon</p>
+        </div>
+        <div class="btn-container">
+          <a href="#" class="btn--primary">Réservez Maintenant</a>
         </div>
       </div>
-    </footer>
+    </hero>
+    <section>
+      <div class="block--primary block--skewed--top--left">
+        <div class="grid grid--1x2 section__hero">
+          <div class="section__header">
+            <h2 class="section__heading">Chef Privé</h2>
+            <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+            <img class="picto" src="medias/pictos/svg/chef.svg" alt="" />
+          </div>
+          <picture class="section__picture"
+            ><img
+              sizes="(max-width: 1238px) 100vw, 1238px"
+              type="image/webp"
+              srcset="
+                medias/images/cedrat@380.webp   380w,
+                medias/images/cedrat@900.webp   900w,
+                medias/images/cedrat@1238.webp 1238w
+              "
+              type="image/jpg"
+              srcset="
+                medias/images/cedrat@380.jpg   380w,
+                medias/images/cedrat@900.jpg   900w,
+                medias/images/cedrat@1238.jpg 1238w
+              "
+              class="section__image"
+              src="medias/images/cedrat@1238.jpg"
+              alt=""
+          /></picture>
+        </div>
+      </div>
+      <div class="media">
+        <picture class="media__picture">
+          <img
+            sizes="(max-width: 480px) 100vw, 480px"
+            type="image/webp"
+            srcset="
+              medias/images/petru@320.webp 320w,
+              medias/images/petru@480.webp 480w
+            "
+            type="image/jpg"
+            srcset="
+              medias/images/petru@320.jpg 320w,
+              medias/images/petru@480.jpg 480w
+            "
+            class="media__image"
+            src="medias/images/petru@480.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="media__content">
+          <p>
+            Je suis Petru Hamon, et j’ai le plaisir de me présenter à vous en
+            tant que chef privé
+          </p>
+        </div>
+      </div>
+      <article>
+        <div class="grid grid--1x2 container column-container">
+          <div class="column">
+            <p class="article__content">
+              Après avoir perfectionné mon art dans des écoles prestigieuses et
+              des restaurants étoilés, j'ai eu l’immense privilège de diriger un
+              restaurant gastronomique en Corse pendant quatre années
+              enrichissantes.
+            </p>
+          </div>
+          <div class="column">
+            <p class="article__content">
+              Aujourd'hui, je souhaite partager avec vous des expériences
+              culinaires uniques, des moments intimes, où chaque plat raconte
+              une histoire, chaque repas devient une célébration.
+            </p>
+          </div>
+        </div>
+      </article>
+      <picture
+        ><img
+          class="section__footer block--white block--skewed--bottom--left"
+          sizes="(max-width: 1920px) 100vw, 1920px"
+          type="image/webp"
+          srcset="
+            medias/images/mains-petru@320.webp   320w,
+            medias/images/mains-petru@1320.webp 1320w,
+            medias/images/mains-petru@1920.webp 1920w
+          "
+          type="image/jpg"
+          srcset="
+            medias/images/mains-petru@320.jpg   320w,
+            medias/images/mains-petru@1320.jpg 1320w,
+            medias/images/mains-petru@1920.jpg 1920w
+          "
+          class="hero__image"
+          src="medias/images/mains-petru@1920.jpg"
+          alt="Gros plan sur l'assemblage d'une entrée"
+      /></picture>
+    </section>
+
     <script src="js/main.js"></script>
   </body>
 </html>
