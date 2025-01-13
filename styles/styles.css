@@ -868,9 +868,9 @@ input[type="text"]:focus,
   z-index: 5000;
 }
 /* TODO : make nav-brand logo opacity to 1 only when the nav menu is open */
-.nav-brand {
+.nav__brand {
   margin-left: 1rem;
-  opacity: 0.5;
+  opacity: 0;
   width: 50px;
   transition: opacity 0.15s;
 }
@@ -933,7 +933,7 @@ input[type="text"]:focus,
   box-shadow: 0 0 3px 3px #666;
   opacity: 1;
 }
-.nav.collapsible--expanded .nav-brand {
+.nav.collapsible--expanded .nav__brand {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
@@ -946,7 +946,10 @@ input[type="text"]:focus,
     padding: 1rem 1rem 0 1rem;
     width: 100%;
   }
-  .nav.collapsible--expanded .nav-brand {
+  .nav__brand {
+    opacity: 0.5;
+  }
+  .nav.collapsible--expanded .nav__brand {
     opacity: 0.5;
   }
   .nav__toggler {
