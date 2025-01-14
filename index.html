@@ -35,7 +35,7 @@
               src="medias/pictos/svg/assiette.svg"
               alt=""
             />
-            <a href="#" class="nav__item">À domicile</a>
+            <a href="#a-domicile" class="nav__item">À domicile</a>
           </div>
           <div class="nav__item-container">
             <img
@@ -430,7 +430,6 @@
             medias/images/passe-plats@1320.jpg 1320w,
             medias/images/passe-plats@1920.jpg 1920w
           "
-          class="hero__image"
           src="medias/images/passe-plats@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
         />
@@ -499,11 +498,9 @@
           </div>
         </div>
       </article>
-    <div class="block-cards container">
-        <!-- TODO : transfer the grid and grid--1x2 classes to the div above and use column display areas css property to span the h3 title throug 2 columns.  -->
+      <div class="grid grid--1x2 block-cards container">
         <!-- TODO : set margin-bottom css property to the block-cards div. -->
-      <h3 class="block-cards__title">Pourquoi choisir mes services?</h3>
-      <div class="grid grid--1x2">
+        <h3 class="block-cards__title">Pourquoi choisir mes services?</h3>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
             <img
@@ -602,7 +599,54 @@
           </p>
         </div>
       </div>
-    </div>
+      <picture class="section__footer">
+      <img
+    sizes="(max-width: 1920px) 100vw, 1920px"
+    type="image/webp"
+    class="section__footer block--white block--skewed--bottom--left"
+    srcset="
+      medias/images/chalumeau@320.webp   320w,
+      medias/images/chalumeau@1320.webp 1320w,
+      medias/images/chalumeau@1920.webp 1920w
+    "
+    type="image/jpg"
+    srcset="
+      medias/images/chalumeau@320.jpg   320w,
+      medias/images/chalumeau@1320.jpg 1320w,
+      medias/images/chalumeau@1920.jpg 1920w
+    "
+    src="medias/images/chalumeau@1920.jpg"
+    alt="Gros plan sur l'assemblage d'une entrée"
+/></picture>
+    </section>
+    <section id='le-processus'>
+    <div class="block--primary block--skewed--top--right grid grid--1x2 section__hero">
+  <div class="section__header">
+    <h2 class="section__heading">Le Processus</h2>
+    <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+    <img class="picto" src="medias/pictos/svg/calendrier.svg" alt="" />
+  </div>
+  <picture class="section__picture"
+    ><img
+      sizes="(max-width: 1238px) 100vw, 1238px"
+      type="image/webp"
+      srcset="
+        medias/images/daurade@380.webp   380w,
+        medias/images/daurade@900.webp   900w,
+        medias/images/daurade@1238.webp 1238w
+      "
+      type="image/jpg"
+      srcset="
+        medias/images/daurade@380.jpg   380w,
+        medias/images/daurade@900.jpg   900w,
+        medias/images/daurade@1238.jpg 1238w
+      "
+      class="section__image"
+      src="medias/images/daurade@1238.jpg"
+      alt=""
+  />
+  </picture>
+</div>
     </section>
     <section class="form__container" id="contactez-moi">
       <div class="block--primary block--skewed--top--left">
@@ -691,7 +735,7 @@
               <li class="footer__list-item">
                 <a
                   href="mailto:petruc.hamon@gmail.com?subject=Demande d'information pour mon repas à domicile..."
-                >petruc.hamon@gmail.com</a
+                >petruc.hamon@gmail.com</a>
               </li>
               <li class="footer__list-item">instagram: @petru.hamon</li>
               <li class="footer__list-item"><a href="www.privatechef.biz">www.privatechef.biz</a></li>
