@@ -414,8 +414,8 @@
           </div>
         </div>
       </article>
-      <picture class="section__footer"
-        ><img
+      <picture class="section__footer">
+        <img
           class="section__footer block--white block--skewed--bottom--right"
           sizes="(max-width: 1920px) 100vw, 1920px"
           type="image/webp"
@@ -433,7 +433,176 @@
           class="hero__image"
           src="medias/images/passe-plats@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
-      /></picture>
+        />
+      </picture>
+    </section>
+    <section id="a-domicile">
+      <div class="block--primary block--skewed--top--left grid grid--1x2 section__hero">
+        <div class="section__header">
+          <h2 class="section__heading">À Domicile</h2>
+          <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+          <img class="picto" src="medias/pictos/svg/assiette.svg" alt="" />
+        </div>
+        <picture class="section__picture">
+          <img
+            sizes="(max-width: 1238px) 100vw, 1238px"
+            type="image/webp"
+            srcset="
+              medias/images/table@380.webp   380w,
+              medias/images/table@900.webp   900w,
+              medias/images/table@1238.webp 1238w
+            "
+            type="image/jpg"
+            srcset="
+              medias/images/table@380.jpg   380w,
+              medias/images/table@900.jpg   900w,
+              medias/images/table@1238.jpg 1238w
+            "
+            class="section__image"
+            src="medias/images/table@1238.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="media">
+        <picture class="media__picture">
+          <img
+            sizes="(max-width: 480px) 100vw, 480px"
+            type="image/webp"
+            srcset="
+              medias/images/espadon@320.webp 320w,
+              medias/images/espadon@480.webp 480w
+            "
+            type="image/jpg"
+            srcset="
+              medias/images/espadon@320.jpg 320w,
+              medias/images/espadon@480.jpg 480w
+            "
+            class="media__image"
+            src="medias/images/espadon@480.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="media__content">
+          <p>Découvrez l'excellence culinaire chez vous.</p>
+        </div>
+      </div>
+      <article>
+        <div class="grid grid--1x2 column-container">
+          <div class="column">
+            <p class="article__content">Vous rêvez d'une expérience gastronomique unique sans quitter le confort de votre maison ? 
+            </p>
+          </div>
+          <div class="column">
+            <p class="article__content">Mon service de chef à domicile est là pour transformer vos repas ordinaires en moments extraordinaires ! 
+            </p>
+          </div>
+        </div>
+      </article>
+    <div class="block-cards container">
+        <!-- TODO : transfer the grid and grid--1x2 classes to the div above and use column display areas css property to span the h3 title throug 2 columns.  -->
+        <!-- TODO : set margin-bottom css property to the block-cards div. -->
+      <h3 class="block-cards__title">Pourquoi choisir mes services?</h3>
+      <div class="grid grid--1x2">
+        <div class="card card--shadow card--wg">
+          <picture class="grid card__picture">
+            <img
+              sizes="(max-width: 800px) 100vw, 800px"
+              type="image/webp"
+              srcset="
+                medias/images/cards/courgette@400.webp 400w,
+                medias/images/cards/courgette@800.webp 800w
+              "
+              type="image/jpg"
+              srcset="
+                medias/images/cards/courgette@400.jpg 400w,
+                medias/images/cards/courgette@800.jpg 800w
+              "
+              class="card__image"
+              src="medias/images/cards/courgette@800.jpg"
+              alt=""
+            />
+          </picture>
+          <h4 class="card__heading">Cuisine Personnalisée</h4>
+          <p class="card__content">Je crée pour vous des menus sur mesure, adaptés à vos goûts et préférences alimentaires.</p>
+          <br>
+          <p class="card__content">Que vous soyez amateur de cuisine française classique, de saveurs exotiques ou de plats végétariens raffinés, chaque repas est une œuvre d'art culinaire conçu spécialement pour vous.</p> 
+        </div>
+        <div class="card card--shadow card--wg">
+          <picture class="grid card__picture">
+            <img
+              sizes="(max-width: 800px) 100vw, 800px"
+              type="image/webp"
+              srcset="
+                medias/images/cards/mains@400.webp 400w,
+                medias/images/cards/mains@800.webp 800w
+              "
+              type="image/jpg"
+              srcset="
+                medias/images/cards/mains@400.jpg 400w,
+                medias/images/cards/mains@800.jpg 800w
+              "
+              class="card__image"
+              src="medias/images/cards/mains@800.jpg"
+              alt=""
+            />
+          </picture>
+          <h4 class="card__heading">Ingrédients Frais et de Qualité</h4>
+          <p class="card__content">Je sélectionne les meilleurs produits locaux et de saison pour garantir des plats savoureux et sains.</p>
+          <br>
+          <p class="card__content">La fraîcheur et la qualité sont au cœur de mon engagement.</p> 
+        </div>
+        <div class="card card--shadow card--wg">
+          <picture class="grid card__picture">
+            <img
+              sizes="(max-width: 800px) 100vw, 800px"
+              type="image/webp"
+              srcset="
+                medias/images/cards/service@400.webp 400w,
+                medias/images/cards/service@800.webp 800w
+              "
+              type="image/jpg"
+              srcset="
+                medias/images/cards/service@400.jpg 400w,
+                medias/images/cards/service@800.jpg 800w
+              "
+              class="card__image"
+              src="medias/images/cards/service@800.jpg"
+              alt=""
+            />
+          </picture>
+          <h4 class="card__heading">Service complet</h4>
+          <p class="card__content">Profitez d'un service complet incluant l'achat des ingrédients, la préparation des plats, le service à table et même le nettoyage de la cuisine.</p>
+          <br>
+          <p class="card__content">Vous n'avez qu'à vous asseoir, vous détendre et savourer chaque bouchée.</p> 
+        </div>
+        <div class="card card--shadow card--wg">
+          <picture class="grid card__picture">
+            <img
+              sizes="(max-width: 800px) 100vw, 800px"
+              type="image/webp"
+              srcset="
+                medias/images/cards/courgette@400.webp 400w,
+                medias/images/cards/courgette@800.webp 800w
+              "
+              type="image/jpg"
+              srcset="
+                medias/images/cards/courgette@400.jpg 400w,
+                medias/images/cards/courgette@800.jpg 800w
+              "
+              class="card__image"
+              src="medias/images/cards/courgette@800.jpg"
+              alt=""
+            />
+          </picture>
+          <h4 class="card__heading">Expertise Personalisée</h4>
+          <p class="card__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis aut
+            asperiores ducimus. Neque, nobis.
+          </p>
+        </div>
+      </div>
+    </div>
     </section>
     <section class="form__container" id="contactez-moi">
       <div class="block--primary block--skewed--top--left">
