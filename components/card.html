@@ -1,7 +1,22 @@
 <div class="card card--shadow card--wg">
-  <picture class="card__picture"
-    ><img src="medias/images/cards/courgette.jpg" alt="" class="card__image"
-  /></picture>
+  <picture class="card__picture">
+    <img
+      sizes="(max-width: 800px) 30vw, 800px"
+      type="image/webp"
+      srcset="
+        medias/images/cards/courgette@400.webp 400w,
+        medias/images/cards/courgette@800.webp 800w
+      "
+      type="image/jpg"
+      srcset="
+        medias/images/cards/courgette@400.jpg 400w,
+        medias/images/cards/courgette@800.jpg 800w
+      "
+      class="card__image"
+      src="medias/images/cards/courgette@800.jpg"
+      alt=""
+    />
+  </picture>
   <h4 class="card__heading">Expertise Personalisée</h4>
   <p class="card__content">
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis aut
