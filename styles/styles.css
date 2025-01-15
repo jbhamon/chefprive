@@ -118,8 +118,8 @@ p {
 .block--skewed--bottom--left {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 5rem));
 }
-.block--cards-process {
-  padding-top: 7rem;
+.block--cards {
+  padding-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .block--skewed--top--left {
@@ -134,7 +134,7 @@ p {
   .block--skewed--bottom--left {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 8rem));
   }
-  .block--cards-process {
+  .block--cards {
     padding-top: 10rem;
   }
 }
@@ -160,8 +160,7 @@ a {
 /* BUTTONS */
 .btn-container {
   line-height: 1.5;
-  margin: 5rem auto 0;
-  padding-bottom: calc(100vh * 0.12);
+  margin: 0 auto 0;
   text-align: center;
   width: 100%;
 }
@@ -185,9 +184,6 @@ a {
   color: var(--color-primary);
 }
 @media screen and (min-width: 768px) {
-  .btn-container {
-    /* padding-bottom: 12rem; */
-  }
   .btn--primary {
     font-size: 1.8rem;
     letter-spacing: 5px;
@@ -335,6 +331,10 @@ a {
   grid-row: 4 / span 1;
   grid-column: 3 / span 1;
 }
+hero .btn-container {
+  padding-top: calc(100vh * 0.08);
+  padding-bottom: calc(100vh * 0.15);
+}
 @media screen and (min-width: 768px) {
   .hero__tagline {
     margin-bottom: 0;
@@ -377,7 +377,7 @@ a {
 @media screen and (min-width: 768px) {
   .section__hero {
     justify-items: right;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
   }
   .section__header {
     bottom: 0px;
@@ -395,7 +395,7 @@ a {
   display: grid;
   position: relative;
   top: -20px;
-  z-index: 100;
+  z-index: 1;
 }
 .media__image {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
@@ -489,7 +489,7 @@ article {
 .block-cards__title {
   color: var(--color-primary);
   letter-spacing: 0.5rem;
-  margin: 5rem 1.5rem 3rem;
+  margin: 0 1.5rem 3rem;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
   word-spacing: 1rem;
 }
@@ -546,7 +546,11 @@ article {
 @media screen and (min-width: 768px) {
   .block-cards__title {
     grid-column: 1 / span 2;
-    margin: 7rem auto 5rem;
+    margin: 0 auto 5rem;
+  }
+  .card {
+    margin: 0 auto 10rem;
+    min-height: 700px;
   }
   .card--shadow {
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
@@ -571,7 +575,7 @@ article {
 }
 @media screen and (min-width: 1440px) {
   .block-cards__title {
-    margin: 10rem auto 7rem;
+    margin: 0 auto 7rem;
   }
   .card {
     margin: 0 auto 15rem;
@@ -624,6 +628,9 @@ article {
 }
 
 /* TESTIMONIAL CARDS */
+.card--testimonial {
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+}
 .card--testimonial .card__heading {
   color: var(--color-primary);
   letter-spacing: 0.5rem;
@@ -631,9 +638,6 @@ article {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   word-spacing: 1rem;
-}
-.card--testimonial {
-  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
 }
 .author {
   color: var(--color-primary);
@@ -652,14 +656,24 @@ article {
   font-weight: 300;
   font-style: italic;
 }
-
+@media screen and (min-width: 768px) {
+  .card--testimonial:nth-of-type(3) {
+    grid-column: 1 / span 2;
+  }
+}
 /* FORMULA CARD */
+.card--formula {
+  padding-left: 0;
+  padding-right: 0;
+}
 .formula__header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 97%;
 }
 .card--formula .card__heading {
+  padding-left: 1rem;
   text-align: left;
 }
 .formula-container {
@@ -670,11 +684,12 @@ article {
   position: relative;
   width: 20px;
   top: 7px;
-  left: -5px;
+  left: 10px;
 }
 .formula-item {
   color: black;
-  margin: 0 0 1.5rem 10px;
+  margin: 0 0 1.5rem;
+  padding-left: 2rem;
   align-self: center;
 }
 /* TODO : 
@@ -682,13 +697,22 @@ article {
  - Increase left margin for formula header for 768px and wider screens
  */
 @media screen and (min-width: 768px) {
+  .formula__header {
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
   .formula__header .card__heading {
     font-size: 2.4rem;
     font-weight: 400;
-    margin: 0;
   }
   .formula-container {
     margin-top: 10rem;
+  }
+  .bullet {
+    left: 50px;
+  }
+  .formula-item {
+    padding-left: 7rem;
   }
 }
 /* CHECKBOX */
@@ -697,13 +721,13 @@ input[type="checkbox"] {
   opacity: 0;
   height: 0;
   width: 0;
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
 }
 .custom-checkbox .checkmark {
   position: relative;
-  left: -5px;
-  margin-left: 15px;
+  left: -10px;
+  top: -10px;
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -830,9 +854,11 @@ input[type="text"]:focus,
   border-color: var(--color-primary);
   box-shadow: 0 0 5px 2px var(--color-input-shadow);
 }
+form .btn-container {
+  padding-bottom: calc(100vh * 0.1);
+}
 .form__button {
   grid-area: button;
-  padding-bottom: 2rem;
 }
 @media screen and (min-width: 425px) {
   input[type="text"],
@@ -903,7 +929,7 @@ input[type="text"]:focus,
   position: fixed;
   top: 0;
   width: 95%;
-  z-index: 5000;
+  z-index: 1000;
 }
 /* TODO : make nav-brand logo opacity to 1 only when the nav menu is open */
 .nav__brand {
