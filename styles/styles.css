@@ -118,6 +118,9 @@ p {
 .block--skewed--bottom--left {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 5rem));
 }
+.block--cards-process {
+  padding-top: 7rem;
+}
 @media screen and (min-width: 768px) {
   .block--skewed--top--left {
     clip-path: polygon(0 calc(0% + 8rem), 100% 0%, 100% 100%, 0% 100%);
@@ -131,6 +134,10 @@ p {
   .block--skewed--bottom--left {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 8rem));
   }
+  .block--cards-process {
+  padding-top: 10rem;
+}
+
 }
 @media screen and (min-width: 1440px) {
   .block--skewed--top--left {
@@ -582,6 +589,8 @@ article {
 /* PROCESS CARDS */
 .card--process {
   margin: 0 auto;
+  max-width: 500px; 
+  padding: 0 2rem;
 }
 .card--process .card__heading {
   color: var(--color-primary);
@@ -591,8 +600,10 @@ article {
   text-transform: uppercase;
   word-spacing: 1rem;
 }
-.card--process > p {
+.card--process .card__content {
   color: black;
+  max-width: 390px;
+  text-align: center;
 }
 .number {
   align-items: center;
