@@ -1,34 +1,149 @@
-<form action="" class="grid grid--form form">
-  <picture class="form__picture">
-    <img
-      sizes="(max-width: 310px) 100vw, 310px"
-      type="image/webp"
-      srcset="
-        medias/images/form@150.webp 150w,
-        medias/images/form@240.webp 240w,
-        medias/images/form@310.webp 310w
-      "
-      type="image/jpg"
-      srcset="
-        medias/images/form@150.jpg 150w,
-        medias/images/form@240.jpg 240w,
-        medias/images/form@310.jpg 310w
-      "
-      class="form__image"
-      src="medias/images/form@310.jpg"
-      alt=""
-    />
-  </picture>
-  <fieldset class="form__content">
-    <input id="surname" type="text" placeholder="nom / surname" />
-    <input id="name" type="text" placeholder="prénom / name" />
-    <input id="city" type="text" placeholder="ville / city" />
-    <input id="phone" type="tel" placeholder="téléphone / phone" />
-    <input id="mail" type="email" placeholder="mail" />
-  </fieldset>
-  <textarea
-    rows="10"
-    class="form__comment"
-    placeholder="Votre commentaire / Your remark"
-  ></textarea>
-</form>
+<section class="form__container" id="contactez-moi">
+  <form action="https://formspree.io/f/mpwwnvon" method="POST">
+    <div
+      class="block--primary block--skewed--top--right grid grid--1x2 section__hero"
+    >
+      <div class="section__header">
+        <h2 class="section__heading">Contactez-moi</h2>
+        <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+        <img class="picto" src="medias/pictos/svg/contact.svg" alt="" />
+      </div>
+      <div class="grid grid--form form">
+        <picture class="form__picture">
+          <img
+            sizes="(max-width: 310px) 100vw, 310px"
+            type="image/webp"
+            srcset="
+              medias/images/form@150.webp 150w,
+              medias/images/form@240.webp 240w,
+              medias/images/form@310.webp 310w
+            "
+            type="image/jpg"
+            srcset="
+              medias/images/form@150.jpg 150w,
+              medias/images/form@240.jpg 240w,
+              medias/images/form@310.jpg 310w
+            "
+            class="form__image"
+            src="medias/images/form@310.jpg"
+            alt=""
+          />
+        </picture>
+        <fieldset class="form__content">
+          <input name="surname" type="text" placeholder="nom / surname" />
+          <input name="name" type="text" placeholder="prénom / name" />
+          <input name="city" type="text" placeholder="ville / city" />
+          <input name="phone" type="tel" placeholder="téléphone / phone" />
+          <input name="mail" type="email" placeholder="mail" />
+        </fieldset>
+        <textarea
+          rows="10"
+          class="form__comment"
+          placeholder="Votre commentaire / Your remark"
+        ></textarea>
+      </div>
+    </div>
+    <div class="grid grid--1x2 container block--cards">
+      <div class="card card--shadow card--gw card--formula">
+        <div class="formula__header">
+          <h4 class="card__heading">Formule<br />Gastronomique</h4>
+          <label class="custom-checkbox"
+            ><input type="checkbox" name="gastro" class="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <p class="formula__description">
+          Offrez à vos papilles un voyage culinaire d'exception en 6 temps
+          minimum.
+        </p>
+        <div class="grid formula__container">
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Amuse-bouche</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Entrée</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Poisson</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Viande</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Viande</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Pré-dessert</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Dessert</p>
+        </div>
+      </div>
+      <div class="card card--shadow card--gw card--formula">
+        <div class="formula__header">
+          <h4 class="card__heading">Formule<br />Bistrot</h4>
+          <label class="custom-checkbox"
+            ><input type="checkbox" name="bistrot" class="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <p class="formula__description">
+          Un menu savoureux et raffiné pour un instant de convivialité et de
+          plaisir culinaire.
+        </p>
+        <div class="grid formula__container">
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Amuse-bouche</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Entrée</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Poisson ou viande</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Dessert</p>
+        </div>
+      </div>
+      <div class="card card--shadow card--gw card--formula">
+        <div class="formula__header">
+          <h4 class="card__heading">Formule<br />Familiale</h4>
+          <label class="custom-checkbox"
+            ><input type="checkbox" name="familial" class="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <p class="formula__description">
+          Rassemblez vos proches autour d'un repas chaleureux et convivial. Vous
+          partagerez avec eux un plaisir simple et authentique avec vos proches.
+        </p>
+        <div class="grid formula__container">
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Entrée</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Poisson ou viande</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Dessert</p>
+        </div>
+      </div>
+      <div class="card card--shadow card--gw card--formula">
+        <div class="formula__header">
+          <h4 class="card__heading">Accord<br />Mets/Vins</h4>
+          <label class="custom-checkbox"
+            ><input type="checkbox" name="mets-vins" class="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <p class="formula__description">
+          Élevez votre expérience culinaire dans un voyage sensoriel où les vins
+          sont soigneusement sélectionnés pour sublimer les saveurs de chaque
+          plat.
+        </p>
+        <div class="grid formula__container">
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Minimum de 3 verres de vin</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Sélection sur mesure</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Harmonie parfaire</p>
+          <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+          <p class="formula__item">Découverte de vins variés</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container form__button">
+      <button class="btn--primary" type="submit">Réservez maintenant</button>
+    </div>
+  </form>
+</section>
