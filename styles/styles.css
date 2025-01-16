@@ -207,6 +207,12 @@ a {
   margin: 0 auto;
   width: 250px;
 }
+.picto--icon {
+  height: 30px;
+  vertical-align: middle;
+  max-width: 50px;
+}
+
 .hero__picto {
   max-width: 200px;
   width: 50%;
@@ -242,6 +248,13 @@ a {
     max-width: 95%;
     width: auto;
   }
+}
+
+/* ICONS */
+.font-icon {
+  color-scheme: white ;
+  font-size: 2rem;
+  vertical-align: middle;
 }
 
 /* GRIDS */
@@ -801,7 +814,7 @@ form .grid--1x2 {
   margin-bottom: 5rem;
 }
 .form {
-  justify-self: left;
+  justify-self: center;
   max-width: 720px;
   padding-bottom: 5rem;
 }
@@ -895,6 +908,7 @@ form .btn-container {
     padding-top: 0;
   }
   .form {
+    justify-self: left;
     padding-bottom: 10rem;
     padding-top: 20rem;
   }
@@ -1111,7 +1125,7 @@ form .btn-container {
 }
 .footer__list-item {
   font-size: 2rem;
-  line-height: 2;
+  line-height: 2.5;
   opacity: 0.5;
   transition: opacity 0.2s;
 }
@@ -1153,7 +1167,7 @@ form .btn-container {
     opacity: 1;
   }
   .footer__list-item {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .footer__brand {
     order: -1;

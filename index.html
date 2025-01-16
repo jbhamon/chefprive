@@ -1154,11 +1154,11 @@
               />
             </picture>
             <fieldset class="form__content">
-              <input name="surname" type="text" placeholder="nom / surname" />
-              <input name="name" type="text" placeholder="prénom / name" />
-              <input name="city" type="text" placeholder="ville / city" />
+              <input name="surname" type="text" placeholder="nom / surname" required minlength="3"/>
+              <input name="name" type="text" placeholder="prénom / name" required minlength="3"/>
+              <input name="city" type="text" placeholder="ville / city" required minlength="3"/>
               <input name="phone" type="tel" placeholder="téléphone / phone" />
-              <input name="mail" type="email" placeholder="mail" />
+              <input name="mail" type="email" placeholder="mail" required minlength="3"/>
             </fieldset>
             <textarea
               rows="10"
@@ -1287,13 +1287,13 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li class="footer__list-item">
+              <li class="footer__list-item"><img src="medias/pictos/svg/chef.svg" alt="" class="picto--icon">
                 <a href="#a-domicile">Chef à domicile</a>
               </li>
-              <li class="footer__list-item">
+              <li class="footer__list-item"><img src="medias/pictos/svg/cloche.svg" alt="" class="picto--icon">
                 <a href="#ma-cuisine">Accord Mets/Vins</a>
               </li>
-              <li class="footer__list-item">
+              <li class="footer__list-item"><img src="medias/pictos/svg/rouleau.svg" alt="" class="picto--icon">
                 <a href="#cours-patisserie">Cours de Pâtisserie</a>
               </li>
             </ul>
@@ -1311,13 +1311,14 @@
           <div class="collapsible__content">
             <ul class="list footer__list">
               <li class="footer__list-item">
+                              <span class="font-icon fa-solid fa-at "></span>
                 <a
                   href="mailto:petruc.hamon@gmail.com?subject=Demande d'information pour mon repas à domicile..."
                   >petruc.hamon@gmail.com</a
                 >
               </li>
               <li class="footer__list-item">
-                <i class="fa-brands fa-square-instagram"></i
+                <span class="font-icon fa-brands fa-square-instagram"></span
                 ><a
                   href="https://www.instagram.com/petru.hamon?igsh=MTF4cXozdTBtYXJxdQ=="
                 >
@@ -1325,6 +1326,7 @@
                 >
               </li>
               <li class="footer__list-item">
+                  <span class="font-icon fa-solid  fa-globe "></span>
                 <a href="www.privatechef.biz">www.privatechef.biz</a>
               </li>
             </ul>
@@ -1341,7 +1343,8 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li class="footer__list-item">23, av.Crovetto Frères</li>
+              <li class="footer__list-item"> 
+              23, av.Crovetto Frères</li>
               <li class="footer__list-item">98000 MONACO</li>
               <br />
               <li class="footer__list-item">Rte de Belgodère</li>
