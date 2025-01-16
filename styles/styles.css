@@ -187,7 +187,7 @@ a {
   .btn--primary {
     font-size: 1.8rem;
     letter-spacing: 5px;
-    padding: 0.8rem 3rem;
+    padding: 0.5rem 3rem;
   }
 }
 
@@ -665,6 +665,7 @@ article {
 @media screen and (min-width: 768px) {
   .card--testimonial:nth-of-type(3) {
     grid-column: 1 / span 2;
+    max-width: min(500px, 45%);
   }
 }
 /* FORMULA CARD */
@@ -682,17 +683,25 @@ article {
   padding-left: 1rem;
   text-align: left;
 }
-.formula-container {
+.formula__description {
+  color: var(--color-primary);
+  font-family: "Source Serif 4", Garamond, Georgia, Times, serif;
+  margin-top: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.formula__container {
   grid-template-columns: auto 1fr;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .bullet {
   position: relative;
   width: 20px;
-  top: 7px;
+  top: 3px;
   left: 10px;
 }
-.formula-item {
+.formula__item {
   color: black;
   margin: 0 0 1.5rem;
   padding-left: 2rem;
@@ -704,20 +713,23 @@ article {
  */
 @media screen and (min-width: 768px) {
   .formula__header {
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-top: 2rem;
   }
   .formula__header .card__heading {
     font-size: 2.4rem;
     font-weight: 400;
   }
-  .formula-container {
-    margin-top: 10rem;
+  .formula__description {
+    padding-left: 2rem;
+  }
+  .formula__item {
+    padding-left: 5rem;
   }
   .bullet {
     left: 50px;
   }
-  .formula-item {
+  .formula__item {
     padding-left: 7rem;
   }
 }
@@ -763,6 +775,8 @@ input[type="checkbox"] {
 }
 
 /* FORMS */
+form .grid--1x2 {
+}
 ::placeholder {
   color: var(--color-input-shadow);
   font-family:
@@ -788,7 +802,6 @@ input[type="checkbox"] {
 }
 .form {
   justify-self: left;
-  margin: 0 auto;
   max-width: 720px;
   padding-bottom: 5rem;
 }
@@ -861,12 +874,6 @@ input[type="text"]:focus,
   border-color: var(--color-primary);
   box-shadow: 0 0 5px 2px var(--color-input-shadow);
 }
-form .btn-container {
-  padding-bottom: calc(100vh * 0.1);
-}
-.form__button {
-  grid-area: button;
-}
 @media screen and (min-width: 425px) {
   input[type="text"],
   input[type="email"],
@@ -876,7 +883,13 @@ form .btn-container {
     padding: 0.5rem 1rem;
   }
 }
+form .btn-container {
+  margin-bottom: 5rem;
+}
 @media screen and (min-width: 768px) {
+  form .grid--1x2 {
+    grid-template-columns: repeat(2, 50%);
+  }
   .form__container .section__header {
     bottom: 50px;
     padding-top: 0;
@@ -884,6 +897,9 @@ form .btn-container {
   .form {
     padding-bottom: 10rem;
     padding-top: 20rem;
+  }
+  form .btn-container {
+    margin-bottom: 10rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -898,6 +914,9 @@ form .btn-container {
     font-size: 1.8rem;
     letter-spacing: 2.5px;
     word-spacing: 4px;
+  }
+  form .btn-container {
+    margin-bottom: 15rem;
   }
 }
 
