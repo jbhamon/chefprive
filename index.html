@@ -66,7 +66,7 @@
         </div>
       </nav>
     </header>
-    <section class="section__hero">
+    <section class="hero-section">
       <div class="block--primary block--skewed--bottom--right">
         <div class="container grid grid--1x2 hero">
           <div class="hero__header">
@@ -81,117 +81,135 @@
             </p>
           </div>
           <div class="grid--4x3 hero__gallery">
-
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/chocolat@170.webp 170w,
                   medias/images/hero/chocolat@340.webp 340w,
                   medias/images/hero/chocolat@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/chocolat@170.jpg 170w,
                   medias/images/hero/chocolat@340.jpg 340w,
                   medias/images/hero/chocolat@510.jpg 510w
                 "
-                class="hero__image"
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 src="medias/images/hero/chocolat@510.jpg"
                 alt="Dessert au chocolat dans sa fève de cacao"
+                class="hero__image"
             /></picture>
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/table-vue@170.webp 170w,
                   medias/images/hero/table-vue@340.webp 340w,
                   medias/images/hero/table-vue@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/table-vue@170.jpg 170w,
                   medias/images/hero/table-vue@340.jpg 340w,
                   medias/images/hero/table-vue@510.jpg 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 class="hero__image"
                 src="medias/images/hero/table-vue@510.jpg"
-                alt="Table dressée avec vue en arrière plan"
+                alt="Table dressée avec
+              vue en arrière plan"
             /></picture>
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/entremet@170.webp 170w,
                   medias/images/hero/entremet@340.webp 340w,
                   medias/images/hero/entremet@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/entremet@170.jpg 170w,
                   medias/images/hero/entremet@340.jpg 340w,
                   medias/images/hero/entremet@510.jpg 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 class="hero__image"
                 src="medias/images/hero/entremet@510.jpg"
                 alt="Fin de dressage d'un entremet"
             /></picture>
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/daurade@170.webp 170w,
                   medias/images/hero/daurade@340.webp 340w,
                   medias/images/hero/daurade@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/daurade@170.jpg 170w,
                   medias/images/hero/daurade@340.jpg 340w,
                   medias/images/hero/daurade@510.jpg 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 class="hero__image"
                 src="medias/images/hero/daurade@510.jpg"
                 alt="Carpaccio de daurade sur son galet de rivière"
             /></picture>
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/betterave@170.webp 170w,
                   medias/images/hero/betterave@340.webp 340w,
                   medias/images/hero/betterave@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/betterave@170.jpg 170w,
                   medias/images/hero/betterave@340.jpg 340w,
                   medias/images/hero/betterave@510.jpg 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 class="hero__image"
                 src="medias/images/hero/betterave@510.jpg"
                 alt="Gargouillou de betterave"
             /></picture>
             <picture class="hero__picture"
-              ><img
-                sizes="(max-width: 510px) 30vw, 510px"
+              ><source
                 type="image/webp"
                 srcset="
                   medias/images/hero/pasteque@170.webp 170w,
                   medias/images/hero/pasteque@340.webp 340w,
                   medias/images/hero/pasteque@510.webp 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/hero/pasteque@170.jpg 170w,
                   medias/images/hero/pasteque@340.jpg 340w,
                   medias/images/hero/pasteque@510.jpg 510w
                 "
+                sizes="(max-width: 510px) 30vw" />
+              <img
                 class="hero__image"
                 src="medias/images/hero/pasteque@510.jpg"
                 alt="Pastèque Yaourt"
@@ -204,54 +222,59 @@
       </div>
     </section>
     <section id="chef-prive">
-      <div class="block--primary block--skewed--top--left">
-        <div class="grid grid--1x2 section__hero">
-          <div class="section__header">
-            <h2 class="section__heading">Chef Privé</h2>
-            <img class="virgule" src="medias/pictos/virgule.png" alt="" />
-            <img class="picto" src="medias/pictos/svg/chef.svg" alt="" />
-          </div>
-              <picture class="section__picture">
-      <source
-        type="image/webp"
-        srcset="
-          medias/images/cedrat@380.webp     380w,
-          medias/images/cedrat@900.webp  900w,
-          medias/images/cedrat@1238.webp 1238w
-        "
-        sizes="(max-width: 1238px) 100vw"
-      />
-      <source
-        type="image/jpg"
-        srcset="
-          medias/images/cedrat@380.jpg     380w,
-          medias/images/cedrat@900.jpg  900w,
-          medias/images/cedrat@1238.jpg 1238w
-        "
-        sizes="(max-width: 1238px) 100vw"
-      />
-      <img src="medias/images/cedrat@1238.jpg" alt="A bowl of salmon and curry" class="section__image"/>
-    </picture>
+      <div
+        class="block--primary block--skewed--top--left section__hero grid grid--1x2"
+      >
+        <div class="section__header">
+          <h2 class="section__heading">Chef Privé</h2>
+          <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+          <img class="picto" src="medias/pictos/svg/chef.svg" alt="" />
         </div>
+        <picture class="section__picture">
+          <source
+            type="image/webp"
+            srcset="
+              medias/images/cedrat@380.webp   380w,
+              medias/images/cedrat@900.webp   900w,
+              medias/images/cedrat@1238.webp 1238w
+            "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              medias/images/cedrat@380.jpg   380w,
+              medias/images/cedrat@900.jpg   900w,
+              medias/images/cedrat@1238.jpg 1238w
+            "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <img
+            src="medias/images/cedrat@1238.jpg"
+            alt="A bowl of salmon and curry"
+            class="section__image"
+          />
+        </picture>
       </div>
       <div class="media">
         <picture class="media__picture">
-          <img
-            sizes="(max-width: 480px) 100vw, 480px"
+          <source
             type="image/webp"
             srcset="
               medias/images/petru@320.webp 320w,
               medias/images/petru@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/petru@320.jpg 320w,
               medias/images/petru@480.jpg 480w
             "
-            class="media__image"
-            src="medias/images/petru@480.jpg"
-            alt=""
+            sizes="(max-width: 480px) 100vw"
           />
+          <img class="media__image" src="medias/images/petru@480.jpg" alt="" />
         </picture>
         <div class="media__content">
           <p>
@@ -280,73 +303,79 @@
         </div>
       </article>
       <picture
-        ><img
-          class="section__footer block--white block--skewed--bottom--left"
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        ><source
           type="image/webp"
           srcset="
             medias/images/mains-petru@320.webp   320w,
             medias/images/mains-petru@1320.webp 1320w,
             medias/images/mains-petru@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw" />
+        <source
           type="image/jpg"
           srcset="
             medias/images/mains-petru@320.jpg   320w,
             medias/images/mains-petru@1320.jpg 1320w,
             medias/images/mains-petru@1920.jpg 1920w
           "
-          class="hero__image"
+          sizes="(max-width: 1920px) 100vw" />
+        <img
+          class="section__footer block--white block--skewed--bottom--left"
           src="medias/images/mains-petru@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
       /></picture>
     </section>
     <section id="ma-cuisine">
-      <div class="block--primary block--skewed--top--right">
-        <div class="grid grid--1x2 section__hero">
-          <div class="section__header">
-            <h2 class="section__heading">Ma Cuisine</h2>
-            <img class="virgule" src="medias/pictos/virgule.png" alt="" />
-            <img class="picto" src="medias/pictos/svg/cloche.svg" alt="" />
-          </div>
-          <picture class="section__picture"
-            ><img
-              sizes="(max-width: 1238px) 100vw, 1238px"
-              type="image/webp"
-              srcset="
-                medias/images/courgette@380.webp   380w,
-                medias/images/courgette@900.webp   900w,
-                medias/images/courgette@1238.webp 1238w
-              "
-              type="image/jpg"
-              srcset="
-                medias/images/courgette@380.jpg   380w,
-                medias/images/courgette@900.jpg   900w,
-                medias/images/courgette@1238.jpg 1238w
-              "
-              class="section__image"
-              src="medias/images/courgette@1238.jpg"
-              alt=""
-          /></picture>
+      <div
+        class="block--primary block--skewed--top--right section__hero grid grid--1x2"
+      >
+        <div class="section__header">
+          <h2 class="section__heading">Ma Cuisine</h2>
+          <img class="virgule" src="medias/pictos/virgule.png" alt="" />
+          <img class="picto" src="medias/pictos/svg/cloche.svg" alt="" />
         </div>
+        <picture class="section__picture"
+          ><source
+            type="image/webp"
+            srcset="
+              medias/images/courgette@380.webp   380w,
+              medias/images/courgette@900.webp   900w,
+              medias/images/courgette@1238.webp 1238w
+            "
+            sizes="(max-width: 1238px) 100vw" />
+          <source
+            type="image/jpg"
+            srcset="
+              medias/images/courgette@380.jpg   380w,
+              medias/images/courgette@900.jpg   900w,
+              medias/images/courgette@1238.jpg 1238w
+            "
+            sizes="(max-width: 1238px) 100vw" />
+          <img
+            class="section__image"
+            src="medias/images/courgette@1238.jpg"
+            alt=""
+        /></picture>
       </div>
       <div class="media">
         <picture class="media__picture">
-          <img
-            sizes="(max-width: 480px) 100vw, 480px"
+          <source
             type="image/webp"
             srcset="
               medias/images/veau@320.webp 320w,
               medias/images/veau@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/veau@320.jpg 320w,
               medias/images/veau@480.jpg 480w
             "
-            class="media__image"
-            src="medias/images/veau@480.jpg"
-            alt=""
+            sizes="(max-width: 480px) 100vw"
           />
+          <img class="media__image" src="medias/images/veau@480.jpg" alt="" />
         </picture>
         <div class="media__content">
           <p>
@@ -374,18 +403,21 @@
       </article>
       <div class="media media-2">
         <picture class="media__picture"
-          ><img
-            sizes="(max-width: 480px) 100vw, 480px"
+          ><source
             type="image/webp"
             srcset="
               medias/images/sommelier@320.webp 320w,
               medias/images/sommelier@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw" />
+          <source
             type="image/jpg"
             srcset="
               medias/images/sommelier@320.jpg 320w,
               medias/images/sommelier@480.jpg 480w
             "
+            sizes="(max-width: 480px) 100vw" />
+          <img
             class="media__image"
             src="medias/images/sommelier@480.jpg"
             alt=""
@@ -424,29 +456,34 @@
         </div>
       </article>
       <picture class="section__footer">
-        <img
-          class="section__footer block--white block--skewed--bottom--right"
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        <source
           type="image/webp"
           srcset="
             medias/images/passe-plats@320.webp   320w,
             medias/images/passe-plats@1320.webp 1320w,
             medias/images/passe-plats@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <source
           type="image/jpg"
           srcset="
             medias/images/passe-plats@320.jpg   320w,
             medias/images/passe-plats@1320.jpg 1320w,
             medias/images/passe-plats@1920.jpg 1920w
           "
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <img
           src="medias/images/passe-plats@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
+          class="section__footer block--white block--skewed--bottom--right"
         />
       </picture>
     </section>
     <section id="a-domicile">
       <div
-        class="block--primary block--skewed--top--left grid grid--1x2 section__hero"
+        class="block--primary block--skewed--top--left section__hero grid grid--1x2"
       >
         <div class="section__header">
           <h2 class="section__heading">À Domicile</h2>
@@ -454,20 +491,25 @@
           <img class="picto" src="medias/pictos/svg/assiette.svg" alt="" />
         </div>
         <picture class="section__picture">
-          <img
-            sizes="(max-width: 1238px) 100vw, 1238px"
+          <source
             type="image/webp"
             srcset="
               medias/images/table@380.webp   380w,
               medias/images/table@900.webp   900w,
               medias/images/table@1238.webp 1238w
             "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/table@380.jpg   380w,
               medias/images/table@900.jpg   900w,
               medias/images/table@1238.jpg 1238w
             "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <img
             class="section__image"
             src="medias/images/table@1238.jpg"
             alt=""
@@ -476,18 +518,23 @@
       </div>
       <div class="media">
         <picture class="media__picture">
-          <img
-            sizes="(max-width: 480px) 100vw, 480px"
+          <source
             type="image/webp"
             srcset="
               medias/images/espadon@320.webp 320w,
               medias/images/espadon@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/espadon@320.jpg 320w,
               medias/images/espadon@480.jpg 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <img
             class="media__image"
             src="medias/images/espadon@480.jpg"
             alt=""
@@ -514,22 +561,26 @@
         </div>
       </article>
       <div class="grid grid--1x2 block--cards container">
-        <!-- TODO : set margin-bottom css property to the block-cards div. -->
         <h3 class="block-cards__title">Pourquoi choisir mes services?</h3>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/courgette@400.webp 400w,
                 medias/images/cards/courgette@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/courgette@400.jpg 400w,
                 medias/images/cards/courgette@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/courgette@800.jpg"
               alt=""
@@ -549,18 +600,23 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/mains@400.webp 400w,
                 medias/images/cards/mains@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/mains@400.jpg 400w,
                 medias/images/cards/mains@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/mains@800.jpg"
               alt=""
@@ -578,18 +634,23 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/service@400.webp 400w,
                 medias/images/cards/service@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/service@400.jpg 400w,
                 medias/images/cards/service@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/service@800.jpg"
               alt=""
@@ -609,48 +670,59 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
-                medias/images/cards/courgette@400.webp 400w,
-                medias/images/cards/courgette@800.webp 800w
+                medias/images/cards/framboise@400.webp 400w,
+                medias/images/cards/framboise@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
-                medias/images/cards/courgette@400.jpg 400w,
-                medias/images/cards/courgette@800.jpg 800w
+                medias/images/cards/framboise@400.jpg 400w,
+                medias/images/cards/framboise@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
-              src="medias/images/cards/courgette@800.jpg"
+              src="medias/images/cards/framboise@800.jpg"
               alt=""
             />
           </picture>
-          <h4 class="card__heading">Expertise Personalisée</h4>
+          <h4 class="card__heading">Expérience unique</h4>
           <p class="card__content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            facilis aut asperiores ducimus. Neque, nobis.
+            Que ce soit pour un dîner romantique, une réunion familiale, un
+            événement spécial ou simplement pour le plaisir de déguster des
+            plats exquis, je crée pour vous une ambiance culinaire mémorable.
           </p>
         </div>
       </div>
       <picture class="section__footer">
-        <img
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        <source
           type="image/webp"
-          class="section__footer block--white block--skewed--bottom--left"
           srcset="
             medias/images/chalumeau@320.webp   320w,
             medias/images/chalumeau@1320.webp 1320w,
             medias/images/chalumeau@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <source
           type="image/jpg"
           srcset="
             medias/images/chalumeau@320.jpg   320w,
             medias/images/chalumeau@1320.jpg 1320w,
             medias/images/chalumeau@1920.jpg 1920w
           "
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <img
           src="medias/images/chalumeau@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
+          class="section__footer block--white block--skewed--bottom--left"
         />
       </picture>
     </section>
@@ -664,20 +736,25 @@
           <img class="picto" src="medias/pictos/svg/calendrier.svg" alt="" />
         </div>
         <picture class="section__picture">
-          <img
-            sizes="(max-width: 1238px) 100vw, 1238px"
+          <source
             type="image/webp"
             srcset="
               medias/images/daurade@380.webp   380w,
               medias/images/daurade@900.webp   900w,
               medias/images/daurade@1238.webp 1238w
             "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/daurade@380.jpg   380w,
               medias/images/daurade@900.jpg   900w,
               medias/images/daurade@1238.jpg 1238w
             "
+            sizes="(max-width: 1238px) 100vw"
+          />
+          <img
             class="section__image"
             src="medias/images/daurade@1238.jpg"
             alt=""
@@ -686,18 +763,23 @@
       </div>
       <div class="media">
         <picture class="media__picture">
-          <img
-            sizes="(max-width: 480px) 100vw, 480px"
+          <source
             type="image/webp"
             srcset="
               medias/images/framboise@320.webp 320w,
               medias/images/framboise@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/frambouse@320.jpg 320w,
               medias/images/framboise@480.jpg 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <img
             class="media__image"
             src="medias/images/framboise@480.jpg"
             alt=""
@@ -781,22 +863,26 @@
         </div>
       </div>
       <picture class="section__footer">
-        <img
-          class="section__footer block--white block--skewed--bottom--right"
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        <source
           type="image/webp"
           srcset="
             medias/images/entremet-closup@320.webp    320w,
             medias/images/entremet-closeup@1320.webp 1320w,
             medias/images/entremet-closeup@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <source
           type="image/jpg"
           srcset="
             medias/images/entremet-closeup@320.jpg   320w,
             medias/images/entremet-closeup@1320.jpg 1320w,
             medias/images/entremet-closeup@1920.jpg 1920w
           "
-          class="hero__image"
+          sizes="(max-width: 1920px) 100vw"
+        />
+        <img
+          class="section__footer block--white block--skewed--bottom--right"
           src="medias/images/entremet-closeup@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
         />
@@ -812,20 +898,23 @@
           <img class="picto" src="medias/pictos/svg/rouleau.svg" alt="" />
         </div>
         <picture class="section__picture"
-          ><img
-            sizes="(max-width: 1238px) 100vw, 1238px"
+          ><source
             type="image/webp"
             srcset="
               medias/images/entremet@380.webp   380w,
               medias/images/entremet@900.webp   900w,
               medias/images/entremet@1238.webp 1238w
             "
+            sizes="(max-width: 1238px) 100vw" />
+          <source
             type="image/jpg"
             srcset="
               medias/images/entremet@380.jpg   380w,
               medias/images/entremet@900.jpg   900w,
               medias/images/entremet@1238.jpg 1238w
             "
+            sizes="(max-width: 1238px) 100vw" />
+          <img
             class="section__image"
             src="medias/images/entremet@1238.jpg"
             alt=""
@@ -833,18 +922,23 @@
       </div>
       <div class="media">
         <picture class="media__picture">
-          <img
-            sizes="(max-width: 480px) 100vw, 480px"
+          <source
             type="image/webp"
             srcset="
               medias/images/chocolat@320.webp 320w,
               medias/images/chocolat@480.webp 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <source
             type="image/jpg"
             srcset="
               medias/images/chocolat@320.jpg 320w,
               medias/images/chocolat@480.jpg 480w
             "
+            sizes="(max-width: 480px) 100vw"
+          />
+          <img
             class="media__image"
             src="medias/images/chocolat@480.jpg"
             alt=""
@@ -882,24 +976,28 @@
         </div>
       </article>
       <div class="grid grid--1x2 block--cards container">
-        <!-- TODO : set margin-bottom css property to the block-cards div. -->
         <h3 class="block-cards__title">
           Pourquoi choisir mes cours de Pâtisserie?
         </h3>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/citron-noir@400.webp 400w,
                 medias/images/cards/citron-noir@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/citron-noir@400.jpg 400w,
                 medias/images/cards/citron-noir@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/citron-noir@800.jpg"
               alt=""
@@ -913,18 +1011,23 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/pochage@400.webp 400w,
                 medias/images/cards/pochage@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/pochage@400.jpg 400w,
                 medias/images/cards/pochage@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/pochage@800.jpg"
               alt=""
@@ -938,18 +1041,23 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/entremet-2@400.webp 400w,
                 medias/images/cards/entremet-2@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/entremet-2@400.jpg 400w,
                 medias/images/cards/entremet-2@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/entremet-2@800.jpg"
               alt=""
@@ -963,18 +1071,23 @@
         </div>
         <div class="card card--shadow card--wg">
           <picture class="grid card__picture">
-            <img
-              sizes="(max-width: 800px) 100vw, 800px"
+            <source
               type="image/webp"
               srcset="
                 medias/images/cards/pre-dessert@400.webp 400w,
                 medias/images/cards/pre-dessert@800.webp 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <source
               type="image/jpg"
               srcset="
                 medias/images/cards/pre-dessert@400.jpg 400w,
                 medias/images/cards/pre-dessert@800.jpg 800w
               "
+              sizes="(max-width: 800px) 100vw"
+            />
+            <img
               class="card__image"
               src="medias/images/cards/pre-dessert@800.jpg"
               alt=""
@@ -988,23 +1101,25 @@
         </div>
       </div>
       <picture class="section__footer"
-        ><img
-          class="section__footer block--white block--skewed--bottom--right"
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        ><source
           type="image/webp"
           srcset="
-            medias/images/mains-petru@320.webp   320w,
-            medias/images/mains-petru@1320.webp 1320w,
-            medias/images/mains-petru@1920.webp 1920w
+            medias/images/tartes@320.webp   320w,
+            medias/images/tartes@1320.webp 1320w,
+            medias/images/tartes@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw" />
+        <source
           type="image/jpg"
           srcset="
-            medias/images/mains-petru@320.jpg   320w,
-            medias/images/mains-petru@1320.jpg 1320w,
-            medias/images/mains-petru@1920.jpg 1920w
+            medias/images/tartes@320.jpg   320w,
+            medias/images/tartes@1320.jpg 1320w,
+            medias/images/tartes@1920.jpg 1920w
           "
-          class="hero__image"
-          src="medias/images/mains-petru@1920.jpg"
+          sizes="(max-width: 1920px) 100vw" />
+        <img
+          class="section__footer block--white block--skewed--bottom--right"
+          src="medias/images/tartes@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
       /></picture>
     </section>
@@ -1018,20 +1133,23 @@
           <img class="picto" src="medias/pictos/svg/message.svg" alt="" />
         </div>
         <picture class="section__picture"
-          ><img
-            sizes="(max-width: 1238px) 100vw, 1238px"
+          ><source
             type="image/webp"
             srcset="
               medias/images/pasteque@380.webp   380w,
               medias/images/pasteque@900.webp   900w,
               medias/images/pasteque@1238.webp 1238w
             "
+            sizes="(max-width: 1238px) 100vw" />
+          <source
             type="image/jpg"
             srcset="
               medias/images/pasteque@380.jpg   380w,
               medias/images/pasteque@900.jpg   900w,
               medias/images/pasteque@1238.jpg 1238w
             "
+            sizes="(max-width: 1238px) 100vw" />
+          <img
             class="section__image"
             src="medias/images/pasteque@1238.jpg"
             alt=""
@@ -1105,31 +1223,31 @@
         </div>
       </div>
       <picture class="section__footer"
-        ><img
-          class="section__footer block--white block--skewed--bottom--left"
-          sizes="(max-width: 1920px) 100vw, 1920px"
+        ><source
           type="image/webp"
           srcset="
             medias/images/lombria@320.webp   320w,
             medias/images/lombria@1320.webp 1320w,
             medias/images/lombria@1920.webp 1920w
           "
+          sizes="(max-width: 1920px) 100vw" />
+        <source
           type="image/jpg"
           srcset="
             medias/images/lombria@320.jpg   320w,
             medias/images/lombria@1320.jpg 1320w,
             medias/images/lombria@1920.jpg 1920w
           "
-          class="hero__image"
+          sizes="(max-width: 1920px) 100vw" />
+        <img
+          class="section__footer block--white block--skewed--bottom--left"
           src="medias/images/lombria@1920.jpg"
           alt="Gros plan sur l'assemblage d'une entrée"
       /></picture>
     </section>
     <section class="form__container" id="contactez-moi">
       <form action="https://formspree.io/f/mpwwnvon" method="POST">
-        <div
-          class="block--primary block--skewed--top--right grid grid--1x2 section__hero"
-        >
+        <div class="block--primary block--skewed--top--right grid grid--1x2">
           <div class="section__header">
             <h2 class="section__heading">Contactez-moi</h2>
             <img class="virgule" src="medias/pictos/virgule.png" alt="" />
@@ -1137,31 +1255,60 @@
           </div>
           <div class="grid grid--form form">
             <picture class="form__picture">
-              <img
-                sizes="(max-width: 310px) 100vw, 310px"
+              <source
                 type="image/webp"
                 srcset="
                   medias/images/form@150.webp 150w,
                   medias/images/form@240.webp 240w,
                   medias/images/form@310.webp 310w
                 "
+                sizes="(max-width: 310px) 100vw"
+              />
+              <source
                 type="image/jpg"
                 srcset="
                   medias/images/form@150.jpg 150w,
                   medias/images/form@240.jpg 240w,
                   medias/images/form@310.jpg 310w
                 "
+                sizes="(max-width: 310px) 100vw"
+              />
+              <img
                 class="form__image"
                 src="medias/images/form@310.jpg"
                 alt=""
               />
             </picture>
             <fieldset class="form__content">
-              <input name="surname" type="text" placeholder="nom / surname" required minlength="3"/>
-              <input name="name" type="text" placeholder="prénom / name" required minlength="3"/>
-              <input name="city" type="text" placeholder="ville / city" required minlength="3"/>
+              <input
+                name="surname"
+                type="text"
+                placeholder="nom / surname"
+                required
+                minlength="3"
+              />
+              <input
+                name="name"
+                type="text"
+                placeholder="prénom / name"
+                required
+                minlength="3"
+              />
+              <input
+                name="city"
+                type="text"
+                placeholder="ville / city"
+                required
+                minlength="3"
+              />
               <input name="phone" type="tel" placeholder="téléphone / phone" />
-              <input name="mail" type="email" placeholder="mail" required minlength="3"/>
+              <input
+                name="mail"
+                type="email"
+                placeholder="mail"
+                required
+                minlength="3"
+              />
             </fieldset>
             <textarea
               rows="10"
@@ -1183,22 +1330,36 @@
               Offrez à vos papilles un voyage culinaire d'exception en 6 temps
               minimum.
             </p>
-            <div class="grid formula__container">
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Amuse-bouche</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Entrée</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Poisson</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Viande</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Viande</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Pré-dessert</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Dessert</p>
-            </div>
+            <ul class="formula__container">
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Amuse-bouche
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Entrée
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Poisson
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Viande
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Viande
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Pré-dessert
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Dessert
+              </li>
+            </ul>
           </div>
           <div class="card card--shadow card--gw card--formula">
             <div class="formula__header">
@@ -1212,16 +1373,24 @@
               Un menu savoureux et raffiné pour un instant de convivialité et de
               plaisir culinaire.
             </p>
-            <div class="grid formula__container">
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Amuse-bouche</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Entrée</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Poisson ou viande</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Dessert</p>
-            </div>
+            <ul class="formula__container">
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Amuse-bouche
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Entrée
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Poisson ou viande
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Dessert
+              </li>
+            </ul>
           </div>
           <div class="card card--shadow card--gw card--formula">
             <div class="formula__header">
@@ -1236,14 +1405,20 @@
               Vous partagerez avec eux un plaisir simple et authentique avec vos
               proches.
             </p>
-            <div class="grid formula__container">
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Entrée</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Poisson ou viande</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Dessert</p>
-            </div>
+            <ul class="formula__container">
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Entrée
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Poisson ou viande
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Dessert
+              </li>
+            </ul>
           </div>
           <div class="card card--shadow card--gw card--formula">
             <div class="formula__header">
@@ -1258,16 +1433,24 @@
               vins sont soigneusement sélectionnés pour sublimer les saveurs de
               chaque plat.
             </p>
-            <div class="grid formula__container">
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Minimum de 3 verres de vin</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Sélection sur mesure</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Harmonie parfaire</p>
-              <img src="medias/icons/couverts.svg" alt="" class="bullet" />
-              <p class="formula__item">Découverte de vins variés</p>
-            </div>
+            <ul class="formula__container">
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Minimum de 3 verres de vin
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Sélection sur mesure
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Harmonie parfaire
+              </li>
+              <li class="formula__item">
+                <img src="medias/icons/couverts.svg" alt="" class="bullet" />
+                Découverte de vins variés
+              </li>
+            </ul>
           </div>
         </div>
         <div class="btn-container form__button">
@@ -1290,13 +1473,28 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li class="footer__list-item"><img src="medias/pictos/svg/chef.svg" alt="" class="picto--icon">
+              <li class="footer__list-item">
+                <img
+                  src="medias/pictos/svg/chef.svg"
+                  alt=""
+                  class="picto--icon"
+                />
                 <a href="#a-domicile">Chef à domicile</a>
               </li>
-              <li class="footer__list-item"><img src="medias/pictos/svg/cloche.svg" alt="" class="picto--icon">
+              <li class="footer__list-item">
+                <img
+                  src="medias/pictos/svg/cloche.svg"
+                  alt=""
+                  class="picto--icon"
+                />
                 <a href="#ma-cuisine">Accord Mets/Vins</a>
               </li>
-              <li class="footer__list-item"><img src="medias/pictos/svg/rouleau.svg" alt="" class="picto--icon">
+              <li class="footer__list-item">
+                <img
+                  src="medias/pictos/svg/rouleau.svg"
+                  alt=""
+                  class="picto--icon"
+                />
                 <a href="#cours-patisserie">Cours de Pâtisserie</a>
               </li>
             </ul>
@@ -1314,7 +1512,7 @@
           <div class="collapsible__content">
             <ul class="list footer__list">
               <li class="footer__list-item">
-                              <span class="font-icon fa-solid fa-at "></span>
+                <span class="font-icon fa-solid fa-at"></span>
                 <a
                   href="mailto:petruc.hamon@gmail.com?subject=Demande d'information pour mon repas à domicile..."
                   >petruc.hamon@gmail.com</a
@@ -1329,7 +1527,7 @@
                 >
               </li>
               <li class="footer__list-item">
-                  <span class="font-icon fa-solid  fa-globe "></span>
+                <span class="font-icon fa-solid fa-globe"></span>
                 <a href="www.privatechef.biz">www.privatechef.biz</a>
               </li>
             </ul>
@@ -1346,10 +1544,9 @@
           </div>
           <div class="collapsible__content">
             <ul class="list footer__list">
-              <li class="footer__list-item"> 
-              23, av.Crovetto Frères</li>
+              <li class="footer__list-item">23, av.Crovetto Frères</li>
               <li class="footer__list-item">98000 MONACO</li>
-              <br />
+              <li></li>
               <li class="footer__list-item">Rte de Belgodère</li>
               <li class="footer__list-item">Lieu-dit l'Ombria</li>
               <li class="footer__list-item">20226 BELGODÈRE</li>
