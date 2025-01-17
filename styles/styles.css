@@ -344,7 +344,7 @@ a {
   grid-row: 4 / span 1;
   grid-column: 3 / span 1;
 }
-hero .btn-container {
+.section__hero .btn-container {
   padding-top: calc(100vh * 0.08);
   padding-bottom: calc(100vh * 0.15);
 }

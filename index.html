@@ -66,7 +66,7 @@
         </div>
       </nav>
     </header>
-    <hero>
+    <section class="section__hero">
       <div class="block--primary block--skewed--bottom--right">
         <div class="container grid grid--1x2 hero">
           <div class="hero__header">
@@ -81,6 +81,7 @@
             </p>
           </div>
           <div class="grid--4x3 hero__gallery">
+
             <picture class="hero__picture"
               ><img
                 sizes="(max-width: 510px) 30vw, 510px"
@@ -201,7 +202,7 @@
           <a href="#contactez-moi" class="btn--primary">Réservez Maintenant</a>
         </div>
       </div>
-    </hero>
+    </section>
     <section id="chef-prive">
       <div class="block--primary block--skewed--top--left">
         <div class="grid grid--1x2 section__hero">
@@ -210,25 +211,27 @@
             <img class="virgule" src="medias/pictos/virgule.png" alt="" />
             <img class="picto" src="medias/pictos/svg/chef.svg" alt="" />
           </div>
-          <picture class="section__picture"
-            ><img
-              sizes="(max-width: 1238px) 100vw, 1238px"
-              type="image/webp"
-              srcset="
-                medias/images/cedrat@380.webp   380w,
-                medias/images/cedrat@900.webp   900w,
-                medias/images/cedrat@1238.webp 1238w
-              "
-              type="image/jpg"
-              srcset="
-                medias/images/cedrat@380.jpg   380w,
-                medias/images/cedrat@900.jpg   900w,
-                medias/images/cedrat@1238.jpg 1238w
-              "
-              class="section__image"
-              src="medias/images/cedrat@1238.jpg"
-              alt=""
-          /></picture>
+              <picture class="section__picture">
+      <source
+        type="image/webp"
+        srcset="
+          medias/images/cedrat@380.webp     380w,
+          medias/images/cedrat@900.webp  900w,
+          medias/images/cedrat@1238.webp 1238w
+        "
+        sizes="(max-width: 1238px) 100vw"
+      />
+      <source
+        type="image/jpg"
+        srcset="
+          medias/images/cedrat@380.jpg     380w,
+          medias/images/cedrat@900.jpg  900w,
+          medias/images/cedrat@1238.jpg 1238w
+        "
+        sizes="(max-width: 1238px) 100vw"
+      />
+      <img src="medias/images/cedrat@1238.jpg" alt="A bowl of salmon and curry" class="section__image"/>
+    </picture>
         </div>
       </div>
       <div class="media">
