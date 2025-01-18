@@ -234,6 +234,7 @@ a {
   width: 200px;
 }
 .silhouette {
+  fill: var(--color-primary);
   margin: 0 auto;
   display: block;
   width: 250px;
@@ -398,6 +399,11 @@ li {
 }
 .section__footer {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .section__header.rouleau {
+    bottom: -55px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section__hero {
@@ -722,6 +728,7 @@ article {
 }
 .bullet {
   display: inline;
+  height: 20px;
   margin-right: 0.7rem;
   position: relative;
   width: 20px;
