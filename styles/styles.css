@@ -822,6 +822,7 @@ input[type="checkbox"] {
 .form__container .section__header {
   bottom: 0;
   margin-bottom: 5rem;
+  z-index: 100;
 }
 .form {
   justify-self: center;
@@ -1054,6 +1055,10 @@ form .btn-container {
   opacity: 1;
 }
 .nav.collapsible--expanded .nav__brand {
+  opacity: 0.7;
+}
+.nav.collapsible--expanded .nav__brand:hover {
+  cursor: pointer;
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
@@ -1069,8 +1074,8 @@ form .btn-container {
   .nav__brand {
     opacity: 0.5;
   }
-  .nav.collapsible--expanded .nav__brand {
-    opacity: 0.5;
+  .nav__brand:hover {
+    opacity: 1;
   }
   .nav__toggler {
     display: none;
@@ -1136,6 +1141,9 @@ form .btn-container {
 .footer__list {
   margin: 1rem 0;
 }
+.footer__list p:first-of-type {
+  margin-bottom: 2rem;
+}
 .footer__list-item {
   font-size: 2rem;
   line-height: 2.5;
@@ -1145,8 +1153,11 @@ form .btn-container {
 .footer__list-item a {
   color: black;
 }
+.footer__list-item p {
+  font-size: 2rem;
+}
 .footer__list-item:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 .footer__brand {
   text-align: center;
