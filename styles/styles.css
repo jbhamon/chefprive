@@ -115,6 +115,7 @@ p {
 .block--skewed--bottom--right {
   clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 5rem), 0% 100%);
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .block--skewed--bottom--left {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% calc(100% - 5rem));
