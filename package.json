@@ -8,8 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbhamon/chefprive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbhamon/chefprive/issues"
+  },
+  "homepage": "https://github.com/jbhamon/chefprive#readme",
+  "description": ""
 }
