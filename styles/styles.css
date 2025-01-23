@@ -121,6 +121,9 @@ p {
 .block--cards {
   padding-top: 5rem;
 }
+.block--bottom {
+  height: 8rem;
+}
 @media screen and (min-width: 768px) {
   .block--skewed--top--left {
     clip-path: polygon(0 calc(0% + 8rem), 100% 0%, 100% 100%, 0% 100%);
@@ -136,6 +139,9 @@ p {
   }
   .block--cards {
     padding-top: 10rem;
+  }
+  .block--bottom {
+    height: 12rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -358,7 +364,8 @@ li {
 }
 .hero-section .btn-container {
   padding-top: calc(100vh * 0.08);
-  padding-bottom: calc(100vh * 0.15);
+  /*padding-bottom: calc(100vh * 0.15);*/
+  padding-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
   .hero__tagline {
