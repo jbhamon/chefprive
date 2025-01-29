@@ -893,6 +893,9 @@ input[type="checkbox"] {
   position: relative;
   text-align: center;
 }
+.form__content legend {
+  visibility: hidden;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
