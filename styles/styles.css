@@ -1,5 +1,5 @@
 /* FONTS */
-@font-face {
+/*@font-face {
     font-family: "Roboto";
     src: url('../fonts/roboto/fixed/Roboto-Regular.woff2') format('woff2'),
         url('../fonts/roboto/fixed/Roboto-Regular.woff') format('woff');
@@ -20,7 +20,7 @@
 	font-family:'Source Serif Variable';
   font-weight: 100 900;
 	font-style: italic;
-}
+}*/
 
 
 :root {
