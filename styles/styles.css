@@ -911,6 +911,9 @@ input[type="checkbox"] {
 .form__content legend {
   display: none;
 }
+label {
+  display: none;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
