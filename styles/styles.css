@@ -911,7 +911,7 @@ input[type="checkbox"] {
 .form__content legend {
   display: none;
 }
-label {
+.input__label {
   display: none;
 }
 input[type="text"],

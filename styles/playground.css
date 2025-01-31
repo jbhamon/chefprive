@@ -909,7 +909,7 @@ input[type="checkbox"] {
   position: relative;
   text-align: center;
 }
-label {
+.input__label {
   display: none;
 }
 input[type="text"],
