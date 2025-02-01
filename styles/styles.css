@@ -767,7 +767,8 @@ article {
   justify-content: space-between;
   max-width: 97%;
 }
-.card--formula .card__heading {
+.formula__header .card__heading {
+  font-size: 2.4rem;
   padding-left: 1rem;
   text-align: left;
 }
@@ -805,7 +806,6 @@ article {
     padding-top: 2rem;
   }
   .formula__header .card__heading {
-    font-size: 2.4rem;
     font-weight: 400;
   }
   .formula__description {
