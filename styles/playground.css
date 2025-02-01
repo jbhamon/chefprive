@@ -857,7 +857,6 @@ input[type="checkbox"] {
 .custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* FORMS */
 ::placeholder {
   color: var(--color-input-shadow);
