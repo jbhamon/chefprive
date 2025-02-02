@@ -263,16 +263,20 @@ a {
   width: 30%;
 }
 .comment--1 {
+  aspect-ratio: 5 / 2;
   display: block;
   margin: 0 0 0 auto;
+  object-fit: cover;
   position: relative;
   top: -15px;
   transform: rotateY(180deg) rotateZ(10deg);
   width: 200px;
 }
 .comment--2 {
+  aspect-ratio: 5 / 2;
   margin: 0 auto 0 0;
   display: block;
+  object-fit: cover;
   position: relative;
   top: -5px;
   left: -10px;
@@ -284,7 +288,6 @@ a {
   margin: 0 auto;
   display: block;
   object-fit: cover;
-  /*width: 250px;*/
   width: 95%;
 }
 @media screen and (min-width: 768px) {
@@ -292,10 +295,6 @@ a {
   .comment--2 {
     width: 300px;
   }
-  /*.silhouette {
-    max-width: 95%;
-    width: auto;
-  }*/
 }
 
 /* ICONS */
