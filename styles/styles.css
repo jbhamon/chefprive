@@ -456,6 +456,8 @@ li {
   width: 100%;
 }
 .section__footer {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
