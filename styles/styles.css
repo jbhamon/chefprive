@@ -911,18 +911,6 @@ article {
 .form__content legend {
   display: none;
 }
-input {
-    accent-color: var(--color-checkbox); 
-}
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-  position: initial;
-  opacity: 1;
-  height: 0;
-  width: 0;
-  height: 25px;
-  width: 25px;
-}
 .input__label {
   display: none;
 }
@@ -974,6 +962,22 @@ input[type="text"]:focus,
   border-color: var(--color-primary);
   box-shadow: 0 0 5px 2px var(--color-input-shadow);
 }
+/*.formula__header label {
+  color: var(--color-primary);
+}*/
+input {
+    accent-color: var(--color-checkbox); 
+}
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  position: initial;
+  opacity: 1;
+  height: 0;
+  width: 0;
+  height: 25px;
+  width: 25px;
+}
+
 @media screen and (min-width: 425px) {
   input[type="text"],
   input[type="email"],
