@@ -240,6 +240,7 @@ a {
 }
 .virgule-verticale {
   display: block;
+  height: 170px;
   margin: 0 auto;
   width: 250px;
 }
@@ -278,20 +279,23 @@ a {
   width: 200px;
 }
 .silhouette {
+  aspect-ratio: 5.8 / 2;
   fill: var(--color-primary);
   margin: 0 auto;
   display: block;
-  width: 250px;
+  object-fit: cover;
+  /*width: 250px;*/
+  width: 95%;
 }
 @media screen and (min-width: 768px) {
   .comment--1,
   .comment--2 {
     width: 300px;
   }
-  .silhouette {
+  /*.silhouette {
     max-width: 95%;
     width: auto;
-  }
+  }*/
 }
 
 /* ICONS */
@@ -1117,6 +1121,7 @@ form .btn-container {
   width: 95%;
 }
 .nav__icon {
+  height: 32px;
   padding-left: 0.5rem;
   transition: transform 0.3s;
   width: 61px;
