@@ -235,6 +235,7 @@ a {
 
 /* VIRGULES */
 .virgule {
+  height: 21px;
   width: 200px;
 }
 .virgule-verticale {
@@ -246,6 +247,7 @@ a {
 /* PICTOS */
 .picto {
   display: block;
+  height: 150px;
   margin: 0 auto;
   width: 250px;
 }
@@ -453,6 +455,8 @@ li {
   width: 100%;
 }
 .section__image {
+  aspect-ratio: 2.78 / 2;
+  object-fit: cover;
   width: 100%;
 }
 .section__footer {
@@ -492,7 +496,6 @@ li {
   aspect-ratio: 1.43 / 2;
   border-radius: 3px;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
-  /*height: 100%;*/
   justify-self: center;
   object-fit: cover;
   width: 80%;
