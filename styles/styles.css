@@ -631,7 +631,7 @@ article {
   border-radius: 3px;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
   justify-self: center;
-  max-width: 95%;
+  width: 95%;
   object-fit: cover;
 }
 .card__content {
