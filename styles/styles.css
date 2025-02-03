@@ -255,7 +255,7 @@ a {
 .picto--icon {
   height: 30px;
   vertical-align: middle;
-  max-width: 50px;
+  width: 50px;
 }
 
 .hero__picto {
@@ -1066,6 +1066,7 @@ form .btn-container {
   justify-content: space-between;
 }
 .collapsible__chevron {
+  height: 40px;
   transform: rotate(90deg);
   transition: transform 0.3s;
   width: 40px;
