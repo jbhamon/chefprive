@@ -914,6 +914,7 @@ article {
   text-align: center;
 }
 .form__image {
+  aspect-ratio: 1.54 / 2;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
   justify-self: center;
   max-width: 310px;
