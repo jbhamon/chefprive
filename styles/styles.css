@@ -386,11 +386,6 @@ li {
   padding: 1rem;
   width: 100%;
 }
-.hero__image {
-  border-radius: 3px;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
-  width: 100%;
-}
 .hero__picture:nth-of-type(1) {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
@@ -415,6 +410,22 @@ li {
   grid-row: 4 / span 1;
   grid-column: 3 / span 1;
 }
+.hero__image {
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  width: 100%;
+}
+.hero__image__ar1 {
+  aspect-ratio: 3.25 / 2;
+}
+.hero__image__ar2 {
+  aspect-ratio: 1.08 / 2;
+}
+.hero__image__ar3 {
+  aspect-ratio: 1.62 / 2;
+}
+
 .hero-section .btn-container {
   padding-top: calc(100vh * 0.08);
   /*padding-bottom: calc(100vh * 0.15);*/
