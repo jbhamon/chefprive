@@ -50,7 +50,7 @@
         /></a>
         <img src="medias/icons/menu.svg" class="nav__toggler" alt="" />
         <div class="collapsible__content nav__list">
-        <a href="#chef-prive">
+        <a href="#chef-prive" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#chef">
@@ -59,7 +59,7 @@
             <span class="nav__item">Chef Privé</span>
           </div>
         </a>
-        <a href="#ma-cuisine">
+        <a href="#ma-cuisine" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#cloche">
@@ -68,7 +68,7 @@
             <span class="nav__item">Ma cuisine</span>
           </div>
         </a>
-        <a href="#a-domicile">
+        <a href="#a-domicile" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#assiette">
@@ -77,7 +77,7 @@
             <span class="nav__item">À domicile</span>
           </div>
         </a>
-        <a href="#le-processus">
+        <a href="#le-processus" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#calendrier">
@@ -86,7 +86,7 @@
             <span class="nav__item">Le processus</span>
           </div>
         </a>
-        <a href="#cours-patisserie">
+        <a href="#cours-patisserie" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#rouleau">
@@ -95,7 +95,7 @@
             <span class="nav__item">Cours de pâtisserie</span>
           </div>
         </a>
-        <a href="#temoignage">
+        <a href="#temoignage" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#message">
@@ -104,7 +104,16 @@
             <span class="nav__item">Témoignages</span>
           </div>
         </a>
-        <a href="#contactez-moi">
+        <a href="#infos" class="nav__link">
+          <div class="nav__item-container">
+            <svg focusable="false" class="nav__icon">
+              <use xlink:href="medias/pictos/svg/sprite.svg#contact">
+              </use>
+            </svg>
+            <span class="nav__item">Infos</span>
+          </div>
+        </a>
+        <a href="#contact" class="nav__link">
           <div class="nav__item-container">
             <svg focusable="false" class="nav__icon">
               <use xlink:href="medias/pictos/svg/sprite.svg#contact">
@@ -2153,7 +2162,7 @@
           alt="Un dessert reprenant les produits corses tel que la noisette, le lait de brebis et le cédrat  confit"
       /></picture>
     </section>
-    <section class="form__container" id="contactez-moi">
+    <section class="form__container" id="infos">
       <form action="https://formspree.io/f/mpwwnvon" method="post" netlify>
         <div class="block--primary block--skewed--top--right">
           <div class="block--primary grid grid--1x2">
@@ -2489,7 +2498,7 @@
         </div>
       </form>
     </section>
-    <footer class="block--primary">
+    <footer class="block--primary" id="contact">
       <div class="container footer__sections grid">
         <section class="footer__section collapsible">
           <div class="collapsible__header footer__header">
@@ -2583,9 +2592,9 @@
             </ul>
           </div>
         </section>
+        <a href="#" class="footer__brand">
         <div class="footer__brand">
-          <a href="#">
-          <svg focusable="false" class="nav__icon">
+          <svg focusable="false">
             <use xlink:href="medias/pictos/svg/sprite.svg#ph"></use>
           </svg>
           <!--<img
@@ -2593,11 +2602,11 @@
               alt="chefprive.biz"
               class="footer__brand"
           />-->
-          </a>
           <p class="footer__name">petru hamon</p>
           <p class="footer__tagline">Private Chef</p>
           <p class="footer__copyright">Copyright &#169; 2025 JBHamon</p>
         </div>
+        </a>
       </div>
     </footer>
     <script src="js/main.js"></script>
