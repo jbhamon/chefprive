@@ -1177,7 +1177,7 @@ form .btn-container {
   cursor: pointer;
   opacity: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .nav {
     align-items: center;
     background: var(--color-primary);
@@ -1234,23 +1234,15 @@ form .btn-container {
     border-radius: 0;
     box-shadow: initial;
   }
-}
-@media screen and (min-width: 1024px) {
-  .nav__link {
-    padding: 0 1rem ;
-  }
   .nav__item {
     font-size: 1.6rem;
   }
-}
-@media screen and (min-width: 1280px) {
   .nav__list {
     width: auto;
   }
   .nav__link {
     padding: 0 2rem ;
   }
-
 }
 
 /* FOOTER */
