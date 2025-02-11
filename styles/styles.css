@@ -1228,7 +1228,6 @@ form .btn-container {
     padding: 0;
     text-align: center;
     white-space: wrap;
-    width: fit-content;
   }
   .nav.collapsible--expanded {
     border: none;
@@ -1238,7 +1237,7 @@ form .btn-container {
 }
 @media screen and (min-width: 1024px) {
   .nav__link {
-    padding: 0 2rem ;
+    padding: 0 1rem ;
   }
   .nav__item {
     font-size: 1.6rem;
@@ -1248,6 +1247,10 @@ form .btn-container {
   .nav__list {
     width: auto;
   }
+  .nav__link {
+    padding: 0 2rem ;
+  }
+
 }
 
 /* FOOTER */
@@ -1319,7 +1322,7 @@ form .btn-container {
   margin-top: 2rem;
   opacity: 0.5;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     grid-column-gap: 20px;
