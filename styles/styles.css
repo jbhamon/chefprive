@@ -1040,7 +1040,7 @@ form .btn-container {
   height: 45px;
   margin-left: 1rem;
   opacity: 0;
-  transition: opacity 0.15s;
+  transition: all 0.25s;
   width: 50px;
 }
 .nav__toggler {
@@ -1079,7 +1079,7 @@ form .btn-container {
   letter-spacing: 2px;
   line-height: 4;
   padding-left: 2rem;
-  transition: color 0.15s;
+  transition: all 0.25s;
   white-space: nowrap;
   word-spacing: 3px;
 }
@@ -1088,6 +1088,10 @@ form .btn-container {
 }
 .nav__item-container:hover .nav__icon {
   transform: scale(1.25);
+}
+.nav__item-container:hover .nav__item {
+  padding-left: 3rem;
+  transform: scale(1.15);
 }
 .nav.collapsible--expanded {
   background: var(--color-primary);
@@ -1107,6 +1111,7 @@ form .btn-container {
 .nav.collapsible--expanded .nav__brand:hover {
   cursor: pointer;
   opacity: 1;
+  transform: scale(1.15);
 }
 @media screen and (min-width: 1280px) {
   .nav {
