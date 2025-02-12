@@ -1223,7 +1223,7 @@ form .btn-container {
   margin: 0 auto;
   width: 65px;
 }
-  .footer__name {
+.footer__name {
   color: white;
   font-family: 'Courier New', Courier, monospace, Garamond, Georgia, Times, serif;
   font-size: 1.7rem;
@@ -1241,6 +1241,10 @@ form .btn-container {
   letter-spacing: 0px;
 }
 .footer__copyright {
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.7;
   margin-top: 2rem;
   opacity: 0.5;
 }
@@ -1267,9 +1271,6 @@ form .btn-container {
   }
   .footer__brand {
     order: -1;
-  }
-  .footer__copyright {
-    font-size: 1.2rem;
   }
 }
 
