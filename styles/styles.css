@@ -1164,6 +1164,10 @@ form .btn-container {
     text-align: center;
     white-space: wrap;
   }
+  .nav__item-container:hover .nav__item {
+    padding: initial;
+    transform: scale(1);
+  }
   .nav.collapsible--expanded {
     border: none;
     border-radius: 0;
@@ -1172,6 +1176,7 @@ form .btn-container {
   .nav__item {
     font-size: 1.6rem;
   }
+
   .nav__list {
     width: auto;
   }
