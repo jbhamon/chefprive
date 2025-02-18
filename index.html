@@ -1841,8 +1841,13 @@
           <ul class="list footer__list">
             <li class="footer__list-item">
               <span class="font-icon fa-solid fa-at"></span>
-              <a
-                href="mailto:petruc.hamon@gmail.com?subject=Demande&nbsp;d'information&nbsp;pour&nbsp;mon&nbsp;repas&nbsp;à&nbspdomicile...">petruc.hamon@gmail.com</a>
+              <script type="text/javascript">
+                emailEph = ('petruc.hamon@' + 'gmail.com')
+                document.write(
+                  '<a href="mailto:' + emailEph + '?subject=Demande&nbsp;d&#39;information&nbsp;pour&nbsp;mon&nbsp;repas&nbsp;&agrave;&nbsp;domicile...">'
+                  + emailEph + '</a>'
+                )
+              </script>
             </li>
             <li class="footer__list-item">
               <span class="font-icon fa-brands fa-square-instagram"></span><a
@@ -1891,9 +1896,13 @@
             <p class="footer__tagline">Private Chef</p>
           </div>
         </a>
-        <a class="footer__copyright"
-          href="mailto:bhamon@me.com?subject=Mail&nbsp;to&nbsp;chefprive.biz&nbsp;webmaster.">Copyright &#169; 2025
-          JBHamon</a>
+        <script type="text/javascript">
+          emailE = ('bhamon@' + 'me.com')
+          document.write(
+            '<a class="footer__copyright" href="mailto:' + emailE + '?subject=Mail&nbsp;to&nbsp;chefprive.biz&nbsp;webmaster.">'
+            + 'Copyright &#169; 2025 JBHamon' + '</a>'
+          )
+        </script>
       </div>
     </div>
   </footer>
