@@ -1058,6 +1058,8 @@ form .btn-container {
 }
 .nav__list {
   background: var(--color-primary);
+  height: 75vh;
+  overflow: scroll;
   width: 100%;
 }
 .nav__item-container {
@@ -1137,6 +1139,7 @@ form .btn-container {
   .nav__list {
     align-items: center;
     display: flex;
+    height: initial;
     justify-content: space-between;
     max-height: 100%;
     opacity: 1;
