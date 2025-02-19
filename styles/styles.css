@@ -17,7 +17,7 @@ html {
 
 body {
   font-family:
-    "Roboto",
+    /* "Roboto", */
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -178,7 +178,7 @@ a {
   color: white;
   display: inline-block;
   font-family:
-    "Roboto",
+    /* "Roboto", */
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -563,7 +563,8 @@ article {
 }
 .article__content {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
+  /* font-weight: 400; */
   letter-spacing: 0.3rem;
   word-spacing: 0.5rem;
 }
@@ -630,7 +631,8 @@ article {
 }
 .card__content {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
+  /* font-weight: 400; */
   letter-spacing: 0.3rem;
   padding-left: 1.5rem;
   padding-right: 0.5rem;
@@ -819,7 +821,7 @@ article {
 ::placeholder {
   color: var(--color-input-shadow);
   font-family:
-    "Roboto",
+    /* "Roboto", */
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -881,7 +883,7 @@ input[type="tel"],
   border-radius: 7px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   font-family:
-    "Roboto",
+    /* "Roboto", */
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
