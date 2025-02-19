@@ -26,6 +26,9 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="google-site-verification" content="vbngojhyqgv6jFAlfp9SQ_QNXXMY9xUN0EkRq0SoQdM" />
   <meta name="msvalidate.01" content="08614ED814C5BD04DE191BA7AA77305F" />
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v22.0"></script>
   <meta property="og:title" content="Petru HAMON, chef privé" />
   <meta property="og:description" content="Une expérience culinaire exceptionnelle!" />
   <meta property="og:type" content="website" />
@@ -1815,19 +1818,19 @@
               <svg focusable="false" class="picto--icon" alt="">
                 <use xlink:href="medias/pictos/svg/sprite.svg#chef"></use>
               </svg>
-              <a href="#a-domicile">Chef à domicile</a>
+              <a class="footer__list-item-a" href="#a-domicile">Chef à domicile</a>
             </li>
             <li class="footer__list-item">
               <svg focusable="false" class="picto--icon" alt="">
                 <use xlink:href="medias/pictos/svg/sprite.svg#cloche"></use>
               </svg>
-              <a href="#ma-cuisine">Accord Mets/Vins</a>
+              <a class="footer__list-item-a" href="#ma-cuisine">Accord Mets/Vins</a>
             </li>
             <li class="footer__list-item">
               <svg focusable="false" class="picto--icon" alt="">
                 <use xlink:href="medias/pictos/svg/sprite.svg#rouleau"></use>
               </svg>
-              <a href="#cours-patisserie">Cours de Pâtisserie</a>
+              <a class="footer__list-item-a" href="#cours-patisserie">Cours de Pâtisserie</a>
             </li>
           </ul>
         </div>
@@ -1843,22 +1846,31 @@
           <ul class="list footer__list">
             <li class="footer__list-item">
               <svg focusable="false" class="svg-icon" alt="">
-                <use xlink:href="medias/pictos/svg/sprite.svg#at"></use>
+                <use xlink:href="medias/pictos/svg/sprite.svg#email-count"></use>
               </svg>
               <script src="js/mail-pch.js"></script>
             </li>
             <li class="footer__list-item">
               <svg focusable="false" class="svg-icon" alt="">
-                <use xlink:href="medias/pictos/svg/sprite.svg#insta-round"></use>
+                <use xlink:href="medias/pictos/svg/sprite.svg#insta-white-strong"></use>
               </svg>
-              <a href="https://www.instagram.com/petru.hamon?igsh=MTF4cXozdTBtYXJxdQ==">
+              <a class="footer__list-item-a" href="https://www.instagram.com/petru.hamon?igsh=MTF4cXozdTBtYXJxdQ==">
                 @petru.hamon</a>
             </li>
             <li class="footer__list-item">
               <svg focusable="false" class="svg-icon" alt="">
-                <use xlink:href="medias/pictos/svg/sprite.svg#globe"></use>
+                <use xlink:href="medias/pictos/svg/sprite.svg#globe-white"></use>
               </svg>
-              <a href="http://www.chefprive.biz">http://www.chefprive.biz</a>
+              <a class="footer__list-item-a" href="http://www.chefprive.biz">http://www.chefprive.biz</a>
+            </li>
+            <li class="footer__list-item" data-href="https://chefprive.biz">
+              <!-- <div class="fb-share-button" data-href="https://chefprive.biz" data-layout="" data-size=""> -->
+              <svg focusable="false" class="svg-icon" alt="">
+                <use xlink:href="medias/pictos/svg/sprite.svg#facebook"></use>
+              </svg>
+              <a class="footer__list-item-a" target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchefprive.biz%2F&amp;src=sdkpreparse">Partager</a>
+              <!-- </div> -->
             </li>
           </ul>
         </div>
@@ -1873,13 +1885,13 @@
         <div class="collapsible__content">
           <ul class="list footer__list">
             <li class="footer__list-item">
-              <p>
+              <p class="footer__list-item-p">
                 23, av.Crovetto Frères<br />
                 98000 MONACO
               </p>
             </li>
             <li class="footer__list-item">
-              <p>
+              <p class="footer__list-item-p">
                 Rte de Belgodère<br />
                 Lieu-dit l'Ombria<br />
                 20226 BELGODÈRE
@@ -1888,7 +1900,7 @@
           </ul>
         </div>
       </section>
-      <div class="footer__brand">
+      <div class=" footer__brand">
         <a href="#">
           <div>
             <svg focusable="false">
