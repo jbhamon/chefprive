@@ -1115,7 +1115,7 @@ form .btn-container {
 }
 @media screen and (min-height: 774px) {
   .nav__list {
-    height: initial;
+    height: auto;
   }
 }
 @media screen and (min-width: 1280px) {
