@@ -1221,11 +1221,11 @@ form .btn-container {
   /* opacity: 0.5; */
   transition: all 0.2s;
 }
-.footer__list-item a {
+.footer__list-item-a {
   color: black;
   opacity: 0.5;
 }
-.footer__list-item p {
+.footer__list-item-p {
   font-size: 2rem;
   opacity: 0.5;
 }
