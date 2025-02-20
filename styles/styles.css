@@ -161,6 +161,9 @@ p {
 a {
   text-decoration: none;
 }
+.robots {
+  display: none;
+}
 
 /* BUTTONS */
 .btn-container {
