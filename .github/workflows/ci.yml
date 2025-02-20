@@ -10,4 +10,4 @@ jobs:
       - run: npm run build
       - run: lhci autorun
         env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.i4IDoVTyogBl9l:61398858:Esc895MwlM }}
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
