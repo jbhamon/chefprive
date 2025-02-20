@@ -1,24 +1,34 @@
 // create mail and subjects variables
-var emailAd= "mailto:" + "petruc.hamon@" + "gmail.com";
-var emailSubj = "?subject=Demande d'information pour mon repas à domicile...";
+var pchMailAd = "mailto:" + "petruc.hamon@" + "gmail.com";
+var pchMailSubj = "?subject=Demande d'information pour mon repas à domicile...";
+
+var jbhMailAd = "mailto:" + "bhamon@" + "me.com";
+var jbhMailSubj = "?subject=Mail to chefprive.biz Webmaster";
 
 // create the elements
-var mail = document.createElement("a");
+var mailAtPch = document.createElement("a");
+var mailAtJbh = document.createElement("a");
 
 // set class to the elements
-mail.setAttribute("class", "footer__list-item-a");
+mailAtPch.setAttribute("class", "footer__list-item-a");
+mailAtJbh.setAttribute("class", "footer__copyright");
 
 // add the URL attribute
-mail.setAttribute("href", emailAd + emailSubj);
+mailAtPch.setAttribute("href", pchMailAd + pchMailSubj);
+mailAtJbh.setAttribute("href", jbhMailAd + jbhMailSubj);
 
 // Add link description
-mailDesc = document.createTextNode("Envoyez-moi un mail");
+mailAtPchDesc = document.createTextNode("Envoyez-moi un mail");
+mailAtJbhDesc = document.createTextNode("Copyright © 2025 JBHamon");
 
 // Add it to the new hyperlink
-mail.appendChild(mailDesc);
+mailAtPch.appendChild(mailAtPchDesc);
+mailAtJbh.appendChild(mailAtJbhDesc);
 
 // Find the place to put it
 placeholder1 = document.getElementById("mail-pch");
+placeholder2 = document.getElementById("mail-jbh");
 //
 // add this to the DOM in memory
-placeholder1.appendChild(mail);
+placeholder1.appendChild(mailAtPch);
+placeholder2.appendChild(mailAtJbh);
