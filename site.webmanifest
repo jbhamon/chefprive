@@ -16,13 +16,5 @@
   "start_url": "https://chefprive.biz",
   "theme_color": "#5a745e",
   "background_color": "#5a745e",
-  "display": "standalone",
-  "shortcuts": [
-    {
-      "name": "À Domicile",
-      "description": "Découvrez l'excellence culinaire chez vous",
-      "url": "https://chefprive.biz/#a-domicile",
-      "icons": [{ "src": "/images/icons/svg/assiete.svg", "sizes": "192x192" }]
-    }
-  ]
+  "display": "minimal-ui"
 }
