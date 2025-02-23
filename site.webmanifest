@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Petru HAMON, Chef privé",
+  "short_name": "Petru HAMON",
   "icons": [
     {
       "src": "medias/icons/android-chrome-192x192.png",
@@ -13,8 +13,16 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "start_url": "https://chefprive.biz",
+  "theme_color": "#5a745e",
+  "background_color": "#5a745e",
+  "display": "standalone",
+  "shortcuts": [
+    {
+      "name": "À Domicile",
+      "description": "Découvrez l'excellence culinaire chez vous",
+      "url": "https://chefprive.biz/#a-domicile",
+      "icons": [{ "src": "/images/icons/svg/assiete.svg", "sizes": "192x192" }]
+    }
+  ]
 }
-
