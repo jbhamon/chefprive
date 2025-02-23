@@ -3,56 +3,56 @@
   "short_name": "Petru HAMON",
   "icons": [
     {
-      "src": "medias/icons/android-chrome-192x192.png",
+      "src": "medias/icons/android-chrome-192x192.webp",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "medias/icons/android-chrome-512x512.png",
+      "src": "medias/icons/android-chrome-512x512.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "508x508",
-      "src": "medias/icons/maskable_icon.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "48x48",
-      "src": "medias/icons/maskable_icon_x48.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x48.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "72x72",
-      "src": "medias/icons/maskable_icon_x72.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x72.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "96x96",
-      "src": "medias/icons/maskable_icon_x96.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x96.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "128x128",
-      "src": "medias/icons/maskable_icon_x128.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x128.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "192x192",
-      "src": "medias/icons/maskable_icon_x192.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x192.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "maskable",
       "sizes": "384x384",
-      "src": "medias/icons/maskable_icon_x384.png",
-      "type": "image/png"
+      "src": "medias/icons/maskable_icon_x384.webp",
+      "type": "image/webp"
     }
   ],
   "start_url": "https://chefprive.biz",
