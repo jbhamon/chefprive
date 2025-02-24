@@ -1,5 +1,5 @@
 // create mail and subjects variables
-var pchMailAd = "mailto:" + "petruchamon@" + "chefprive.biz";
+var pchMailAd = "mailto:" + "petruhamon@" + "chefprive.biz";
 var pchMailSubj = "?subject=Demande d'information pour mon repas à domicile...";
 
 var jbhMailAd = "mailto:" + "webmaster@" + "chefprive.biz";
