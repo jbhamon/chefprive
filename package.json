@@ -19,5 +19,8 @@
     "url": "https://github.com/jbhamon/chefprive/issues"
   },
   "homepage": "https://github.com/jbhamon/chefprive#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "netlify-plugin-html-validate": "^1.1.1"
+  }
 }
