@@ -152,8 +152,13 @@
     <section class="hero-section">
       <div class="block--primary">
         <div class="container grid grid--1x2 hero">
-          <div class="hero__header">
+          <div
+            class="hero__header"
+            itemscope
+            itemtype="https://schema.org/FoodService"
+          >
             <svg
+              itemprop="logo"
               focusable="false"
               alt="Logo Petru HAMON"
               class="hero__picto"
@@ -165,32 +170,48 @@
               <use xlink:href="medias/pictos/svg/sprite.svg#ph"></use>
             </svg>
             <p
+              itemprop="provider"
+              itemscope
+              itemtype="https://schema.org/Person"
               class="hero__name"
               data-aos="zoom-in"
               data-aos-delay="300"
               data-aos-easing="ease-out"
               data-aos-duration="1000"
             >
-              petru hamon
+              <span itemprop="givenName">petru</span>
+              <span itemprop="familyName">hamon</span>
             </p>
-            <h1>
+            <h1 itemprop="serviceType">
               Private Chef
               <!-- <h1 data-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-out" data-aos-duration="700"> -->
               <!--   Private Chef -->
             </h1>
             <p
+              itemprop="Description"
               class="hero__tagline"
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-easing="ease-out"
               data-aos-duration="1000"
             >
-              De la Côte d'Azur à la Corse,<br />
-              Découvrez l'excellence cullinaire<br />Avec notre Chef Privé á
-              domicile.
+              De la <span itemprop="areaServed">Côte d'Azur</span> à la
+              <span itemprop="areaServed">Corse</span>,<br />
+              Découvrez l'excellence cullinaire<br />Avec notre
+              <span
+                itemprop="provider"
+                itemscope
+                itemtype="https://schema.org/Person"
+                ><span itemprop="jobTitle">Chef Privé</span></span
+              >
+              à domicile.
             </p>
           </div>
-          <div class="grid--4x3 hero__gallery">
+          <div
+            class="grid--4x3 hero__gallery"
+            itemscope
+            itemtype="https://schema.org/FoodService"
+          >
             <picture
               class="hero__picture"
               data-aos="zoom-in"
@@ -224,6 +245,7 @@
                 "
               />
               <img
+                itemprop="image"
                 src="medias/images/hero/dessert-cacao_jpg/dessert-cacao_w_674.jpg"
                 alt="Un dessert au chocolat, reprenant toutes les formes du cacao, de la fève à la cabosse"
                 class="hero__image hero__image__ar1"
@@ -264,6 +286,7 @@
                 "
               />
               <img
+                itemprop="image"
                 class="hero__image hero__image__ar2"
                 src="medias/images/hero/table_jpg/table_w_672.jpg"
                 alt=" Une table dressée avec élégance et raffinement"
@@ -303,6 +326,7 @@
                 "
               />
               <img
+                itemprop="image"
                 class="hero__image hero__image__ar3"
                 src="medias/images/hero/entremet-fleur_jpg/entremet-fleur_w_674.jpg"
                 alt="Un entremet façon tiramisu et une fleur de crème fouettée au mascarpone"
@@ -343,6 +367,7 @@
                 "
               />
               <img
+                itemprop="image"
                 class="hero__image hero__image__ar3"
                 src="medias/images/hero/daurade_jpg/daurade_w_674.jpg"
                 alt="Un carpaccio de daurade accompagné de pickles d’oingons rouges et d’une écume aux agrumes servis sur un galet"
@@ -382,6 +407,7 @@
                 "
               />
               <img
+                itemprop="image"
                 class="hero__image hero__image__ar2"
                 src="medias/images/hero/gargouillou_jpg/gargouillou_w_672.jpg"
                 alt="Une salade composée d’herbe sauvage, avec une fleur de betterave et un gel d’arbouse"
@@ -422,6 +448,7 @@
                 "
               />
               <img
+                itemprop="image"
                 class="hero__image hero__image__ar1"
                 src="medias/images/hero/pasteque_jpg/pasteque_w_674.jpg"
                 alt="Un dessert autour de la pastèque et de la fleur de menthe"
@@ -448,13 +475,15 @@
         class="block--primary block--skewed--top--left section__hero grid grid--1x2"
       >
         <div
+          itemscope
+          itemtype="https://schema.org/FoodService"
           class="section__header"
           data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-easing="ease-out"
           data-aos-duration="400"
         >
-          <h2 class="section__heading">Chef Privé</h2>
+          <h2 itemprop="serviceType" class="section__heading">Chef Privé</h2>
           <svg focusable="false" class="virgule">
             <use xlink:href="medias/pictos/svg/sprite.svg#virgule"></use>
           </svg>
@@ -490,6 +519,7 @@
             "
           />
           <img
+            temprop="image"
             loading=" lazy"
             src="medias/images/sections_image/ombria-1_jpg/ombria-1_w_1344.jpg"
             alt="Un dessert reprenant les produits corses tel que la noisette, le lait de brebis et le cédrat  confit"
@@ -497,7 +527,7 @@
           />
         </picture>
       </div>
-      <div class="media">
+      <div class="media" itemscope itemtype="https://schema.org/FoodService">
         <picture
           class="media__picture"
           data-aos="zoom-in-up"
@@ -524,6 +554,7 @@
             "
           />
           <img
+            itemprop="image"
             loading="lazy"
             class="media__image"
             src="medias/images/medias/petru_jpg/petru@1238.jpg"
@@ -537,24 +568,35 @@
           data-aos-easing="ease-in-out"
           data-aos-duration="400"
         >
-          <p>
-            Je suis Petru Hamon, et j’ai le plaisir de me présenter à vous en
-            tant que chef privé.
+          <p itemprop="provider" itemscope itemtype="https://schema.org/Person">
+            Je suis <span itemprop="givenName">Petru </span
+            ><span itemprop="familyName">Hamon</span>, et j’ai le plaisir de me
+            présenter à vous en tant que
+            <span itemprop="jobTitle">chef privé</span>.
           </p>
         </div>
       </div>
       <article>
-        <div class="grid grid--1x2 column-container">
-          <div class="column">
-            <p class="article__content">
+        <div
+          itemscope
+          itemtype="https://schema.org/FoodService"
+          class="grid grid--1x2 column-container"
+        >
+          <div
+            itemprop="provider"
+            itemscope
+            itemtype="https://schema.org/Person"
+            class="column"
+          >
+            <p itemprop="skills" class="article__content">
               Après avoir perfectionné mon art dans des écoles prestigieuses et
               des restaurants étoilés, j'ai eu l’immense privilège de diriger un
               restaurant gastronomique en Corse pendant quatre années
               enrichissantes.
             </p>
           </div>
-          <div class="column">
-            <p class="article__content">
+          <div itemprop="offers" itemscope="Offer" class="column">
+            <p class="article__content" itemprop="description">
               Aujourd'hui, je souhaite partager avec vous des expériences
               culinaires uniques, des moments intimes, où chaque plat raconte
               une histoire, chaque repas devient une célébration.
