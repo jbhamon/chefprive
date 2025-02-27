@@ -77,7 +77,7 @@
             <use xlink:href="medias/pictos/svg/sprite.svg#ph"></use>
           </svg>
         </a>
-        <svg focusable="false" class="nav__toggler" alt="">
+        <svg focusable="false" class="nav__toggler">
           <use xlink:href="medias/pictos/svg/sprite.svg#menu"></use>
         </svg>
         <div class="collapsible__content nav__list">
@@ -157,9 +157,7 @@
         <div class="container grid grid--1x2 hero">
           <div class="hero__header">
             <svg
-              itemprop="logo"
               focusable="false"
-              alt="Logo Petru HAMON"
               class="hero__picto"
               data-aos="zoom-in"
               data-aos-delay="300"
@@ -513,7 +511,7 @@
           />
           <img
             itemprop="image"
-            loading=" lazy"
+            loading="lazy"
             src="medias/images/sections_image/ombria-1_jpg/ombria-1_w_1344.jpg"
             alt="Un dessert reprenant les produits corses tel que la noisette, le lait de brebis et le cédrat  confit"
             class="section__image"
@@ -701,7 +699,7 @@
             "
           />
           <source
-            type=" image/jpg"
+            type="image/jpg"
             sizes="(min-width: 768px) 70vw, 100vw"
             srcset="
               medias/images/sections_image/gavotte-chataignes_jpg/gavotte-chataignes_w_320.jpg   320w,
@@ -1865,9 +1863,9 @@
           data-aos-easing="ease-in-out"
           data-aos-duration="400"
         >
-          <meta itemprop="provider" content="Petru HAMON" />
-          <meta itemprop="hasCourseInstance" content="A Domicile" />
           <p>
+            <meta itemprop="provider" content="Petru HAMON" />
+            <meta itemprop="hasCourseInstance" content="A Domicile" />
             Je suis enchanté de vous présenter mes cours de pâtisserie, de
             partager mes savoirs-faire et techniques avec vous, chez vous.
           </p>
@@ -2181,7 +2179,7 @@
         />
         <source
           type="image/jpg"
-          size="100vw"
+          sizes="100vw"
           srcset="
             medias/images/footers/tartes_jpg/tartes_w_320.jpg   320w,
             medias/images/footers/tartes_jpg/tartes_w_451.jpg   451w,
@@ -2299,14 +2297,10 @@
             data-aos-duration="500"
             data-aos-offset="50"
           >
-            <svg
-              focusable="false"
-              class="comment--2"
-              alt="Pictogramme Commentaire"
-            >
+            <svg focusable="false" class="comment--2">
               <use xlink:href="medias/pictos/svg/sprite.svg#comment"></use>
             </svg>
-            <svg focusable="false" class="silhouette" alt="Pictogramme femme">
+            <svg focusable="false" class="silhouette">
               <use xlink:href="medias/pictos/svg/sprite.svg#femme"></use>
             </svg>
           </div>
@@ -2342,14 +2336,10 @@
             data-aos-duration="500"
             data-aos-offset="50"
           >
-            <svg
-              focusable="false"
-              class="comment--1"
-              alt="Pictogramme Commentaire"
-            >
+            <svg focusable="false" class="comment--1">
               <use xlink:href="medias/pictos/svg/sprite.svg#comment"></use>
             </svg>
-            <svg focusable="false" class="silhouette" alt="Pictogramme homme">
+            <svg focusable="false" class="silhouette">
               <use xlink:href="medias/pictos/svg/sprite.svg#homme"></use>
             </svg>
           </div>
@@ -2386,14 +2376,10 @@
             data-aos-duration="500"
             data-aos-offset="50"
           >
-            <svg
-              focusable="false"
-              class="comment--2"
-              alt="Pictogramme Commentaire"
-            >
+            <svg focusable="false" class="comment--2">
               <use xlink:href="medias/pictos/svg/sprite.svg#comment"></use>
             </svg>
-            <svg focusable="false" class="silhouette" alt="Pictogramme femme">
+            <svg focusable="false" class="silhouette">
               <use xlink:href="medias/pictos/svg/sprite.svg#femme"></use>
             </svg>
           </div>
@@ -2456,7 +2442,7 @@
       </picture>
     </section>
     <section class="form__container" id="infos">
-      <form action="https://formspree.io/f/mpwwnvon" method="post" netlify>
+      <form action="https://formspree.io/f/mpwwnvon" method="post">
         <div class="block--primary block--skewed--top--right">
           <div class="block--primary grid grid--1x2">
             <div
@@ -2513,6 +2499,7 @@
                 <legend>Contactez-moi</legend>
                 <label class="input__label" for="surname">Surname</label>
                 <input
+                  id="surname"
                   name="surname"
                   type="text"
                   placeholder="nom / surname"
@@ -2523,6 +2510,7 @@
                 />
                 <label class="input__label" for="name">Name</label>
                 <input
+                  id="name"
                   name="name"
                   type="text"
                   placeholder="prénom / name"
@@ -2533,6 +2521,7 @@
                 />
                 <label class="input__label" for="city">City</label>
                 <input
+                  id="city"
                   name="city"
                   type="text"
                   placeholder="ville / city"
@@ -2544,6 +2533,7 @@
                 />
                 <label class="input__label" for="phone">Phone</label>
                 <input
+                  id="phone"
                   name="phone"
                   type="tel"
                   placeholder="téléphone / phone"
@@ -2552,6 +2542,7 @@
                 />
                 <label class="input__label" for="mail">Mail</label>
                 <input
+                  id="mail"
                   name="mail"
                   type="email"
                   placeholder="mail"
@@ -2805,7 +2796,7 @@
         <section class="footer__section collapsible">
           <div class="collapsible__header footer__header">
             <h2 class="collapsible__heading footer__heading">Services</h2>
-            <svg focusable="false" class="collapsible__chevron" alt="">
+            <svg focusable="false" class="collapsible__chevron">
               <use
                 xlink:href="medias/pictos/svg/sprite.svg#chevron--green"
               ></use>
@@ -2814,7 +2805,7 @@
           <div class="collapsible__content">
             <ul class="list footer__list">
               <li class="footer__list-item">
-                <svg focusable="false" class="picto--icon" alt="">
+                <svg focusable="false" class="picto--icon">
                   <use xlink:href="medias/pictos/svg/sprite.svg#chef"></use>
                 </svg>
                 <a class="footer__list-item-a" href="#a-domicile"
@@ -2822,7 +2813,7 @@
                 >
               </li>
               <li class="footer__list-item">
-                <svg focusable="false" class="picto--icon" alt="">
+                <svg focusable="false" class="picto--icon">
                   <use xlink:href="medias/pictos/svg/sprite.svg#cloche"></use>
                 </svg>
                 <a class="footer__list-item-a" href="#ma-cuisine"
@@ -2830,7 +2821,7 @@
                 >
               </li>
               <li class="footer__list-item">
-                <svg focusable="false" class="picto--icon" alt="">
+                <svg focusable="false" class="picto--icon">
                   <use xlink:href="medias/pictos/svg/sprite.svg#rouleau"></use>
                 </svg>
                 <a class="footer__list-item-a" href="#cours-patisserie"
@@ -2843,7 +2834,7 @@
         <section class="footer__section collapsible">
           <div class="collapsible__header footer__header">
             <h2 class="collapsible__heading footer__heading">Réseaux</h2>
-            <svg focusable="false" class="collapsible__chevron" alt="">
+            <svg focusable="false" class="collapsible__chevron">
               <use
                 xlink:href="medias/pictos/svg/sprite.svg#chevron--green"
               ></use>
@@ -2852,14 +2843,14 @@
           <div class="collapsible__content">
             <ul class="list footer__list">
               <li id="mail-pch" class="footer__list-item">
-                <svg focusable="false" class="svg-icon" alt="">
+                <svg focusable="false" class="svg-icon">
                   <use
                     xlink:href="medias/pictos/svg/sprite.svg#email-count"
                   ></use>
                 </svg>
               </li>
               <li class="footer__list-item">
-                <svg focusable="false" class="svg-icon" alt="">
+                <svg focusable="false" class="svg-icon">
                   <use
                     xlink:href="medias/pictos/svg/sprite.svg#insta-white-strong"
                   ></use>
@@ -2872,7 +2863,7 @@
                 >
               </li>
               <li class="footer__list-item">
-                <svg focusable="false" class="svg-icon" alt="">
+                <svg focusable="false" class="svg-icon">
                   <use
                     xlink:href="medias/pictos/svg/sprite.svg#globe-white"
                   ></use>
@@ -2882,7 +2873,7 @@
                 >
               </li>
               <li class="footer__list-item" data-href="https://chefprive.biz">
-                <svg focusable="false" class="svg-icon" alt="">
+                <svg focusable="false" class="svg-icon">
                   <use xlink:href="medias/pictos/svg/sprite.svg#facebook"></use>
                 </svg>
                 <a
@@ -2901,7 +2892,7 @@
         <section class="footer__section collapsible">
           <div class="collapsible__header footer__header">
             <h2 class="collapsible__heading footer__heading">Contact</h2>
-            <svg focusable="false" class="collapsible__chevron" alt="">
+            <svg focusable="false" class="collapsible__chevron">
               <use
                 xlink:href="medias/pictos/svg/sprite.svg#chevron--green"
               ></use>
