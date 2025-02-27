@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: *.jpg
-Disallow: *.webp
-Disallow: *.svg
 Disallow: *.js
