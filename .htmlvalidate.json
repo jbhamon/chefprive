@@ -2,6 +2,6 @@
   "extends": ["html-validate:recommended"],
 
   "rules": {
-    "doctype-style": ["warn", { "style": "uppercase" }]
+    "doctype-style": ["warn", { "style": "lowercase" }]
   }
 }
