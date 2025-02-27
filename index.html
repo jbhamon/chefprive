@@ -560,10 +560,10 @@
           data-aos-duration="400"
         >
           <p>
-            Je suis <span itemprop="givenName">Petru </span
-            ><span itemprop="familyName">Hamon</span>, et j’ai le plaisir de me
+            Notre Chef, <span itemprop="givenName">Petru </span
+            ><span itemprop="familyName">Hamon</span>, a le plaisir de se
             présenter à vous en tant que
-            <span itemprop="jobTitle">chef privé</span>.
+            <span itemprop="jobTitle">chef privé à domicile</span>.
           </p>
         </div>
       </div>
@@ -2223,17 +2223,24 @@
         />
       </picture>
     </section>
-    <section id="temoignage">
+    <section
+      id="temoignage"
+      itemscope
+      itemtype="https://schema.org/FoodService"
+    >
       <div
         class="block--primary block--skewed--top--left grid grid--1x2 section__hero"
       >
         <div
+          itemprop="review"
+          itemscope
+          itemtype="https://schema.org/Review"
           class="section__header"
           data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-easing="ease-out"
         >
-          <h2 class="section__heading">Témoignages</h2>
+          <h2 itemprop="name" class="section__heading">Témoignages</h2>
           <svg focusable="false" class="virgule">
             <use xlink:href="medias/pictos/svg/sprite.svg#virgule"></use>
           </svg>
@@ -2269,6 +2276,7 @@
             "
           />
           <img
+            itemprop="image"
             loading="lazy"
             class="section__image"
             src="medias/images/sections_image/pasteque_jpg/pasteque_w_1344.jpg"
@@ -2276,7 +2284,12 @@
           />
         </picture>
       </div>
-      <div class="grid grid--1x2 block--cards container">
+      <div
+        itemprop="review"
+        itemscope
+        itemtype="https://schema.org/Review"
+        class="grid grid--1x2 block--cards container"
+      >
         <div
           class="card card--shadow card--testimonial"
           data-aos="fade-up"
@@ -2284,6 +2297,7 @@
           data-aos-easing="ease-out"
         >
           <h3
+            itemprop="itemReviewed"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -2291,7 +2305,7 @@
           >
             repas en famille
           </h3>
-          <p>
+          <p itemprop="reviewBody">
             Nous avons vécu une soirée inoubliable grâce au chef, qui nous a
             proposé un menu sur mesure d'une grande finesse. Les accords mets et
             vins étaient parfaits, chaque plat étant sublimé par le vin choisi
@@ -2324,6 +2338,7 @@
           data-aos-easing="ease-out"
         >
           <h3
+            itemprop="itemReviewed"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -2331,7 +2346,7 @@
           >
             excellent repas
           </h3>
-          <p>
+          <p itemprop="reviewBody">
             Le chef a créé un menu sur mesure pour accompagner nos vins, et
             chaque plat a sublimé les arômes de nos bouteilles à la perfection.
             Les accords étaient d’une justesse incroyable, et la créativité des
@@ -2363,6 +2378,7 @@
           data-aos-easing="ease-out"
         >
           <h3
+            itemprop="itemReviewed"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
@@ -2370,7 +2386,7 @@
           >
             cours de pâtisserie
           </h3>
-          <p>
+          <p itemprop="reviewBody">
             Le chef Petru Hamon m'a donné des cours de pâtisserie. Ce fut un
             moment de partage et d'apprentissage dans une ambiance conviviale.
             C'est un chef à l'écoute de nos attentes, perfectionniste et
