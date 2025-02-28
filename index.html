@@ -2225,24 +2225,17 @@
         />
       </picture>
     </section>
-    <section
-      id="temoignage"
-      itemscope
-      itemtype="https://schema.org/FoodService"
-    >
+    <section id="temoignage">
       <div
         class="block--primary block--skewed--top--left grid grid--1x2 section__hero"
       >
         <div
-          itemprop="review"
-          itemscope
-          itemtype="https://schema.org/Review"
           class="section__header"
           data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-easing="ease-out"
         >
-          <h2 itemprop="name" class="section__heading">Témoignages</h2>
+          <h2 class="section__heading">Témoignages</h2>
           <svg focusable="false" class="virgule">
             <use xlink:href="medias/pictos/svg/sprite.svg#virgule"></use>
           </svg>
@@ -2278,7 +2271,6 @@
             "
           />
           <img
-            itemprop="image"
             loading="lazy"
             class="section__image"
             src="medias/images/sections_image/pasteque_jpg/pasteque_w_1344.jpg"
@@ -2286,13 +2278,10 @@
           />
         </picture>
       </div>
-      <div
-        itemprop="review"
-        itemscope
-        itemtype="https://schema.org/Review"
-        class="grid grid--1x2 block--cards container"
-      >
+      <div class="grid grid--1x2 block--cards container">
         <div
+          itemscope
+          itemtype="https://schema.org/Review"
           class="card card--shadow card--testimonial"
           data-aos="fade-up"
           data-aos-delay="100"
@@ -2300,12 +2289,14 @@
         >
           <h3
             itemprop="itemReviewed"
+            itemscope
+            itemtype="https://schema.org/Organization"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
             data-aos-easing="ease-out"
           >
-            repas en famille
+            <span itemprop="name">repas en famille</span>
           </h3>
           <p itemprop="reviewBody">
             Nous avons vécu une soirée inoubliable grâce au chef, qui nous a
@@ -2331,9 +2322,18 @@
               <use xlink:href="medias/pictos/svg/sprite.svg#femme"></use>
             </svg>
           </div>
-          <h4 class="author author--female">Claire</h4>
+          <h4
+            itemprop="author"
+            itemscope
+            itemtype="https://schema.org/Person"
+            class="author author--female"
+          >
+            <span itemprop="name">Claire</span>
+          </h4>
         </div>
         <div
+          itemscope
+          itemtype="https://schema.org/Review"
           class="card card--shadow card--testimonial"
           data-aos="fade-up"
           data-aos-delay="100"
@@ -2341,12 +2341,14 @@
         >
           <h3
             itemprop="itemReviewed"
+            itemscope
+            itemtype="https://schema.org/Organization"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
             data-aos-easing="ease-out"
           >
-            excellent repas
+            <span itemprop="name">excellent repas</span>
           </h3>
           <p itemprop="reviewBody">
             Le chef a créé un menu sur mesure pour accompagner nos vins, et
@@ -2371,9 +2373,18 @@
               <use xlink:href="medias/pictos/svg/sprite.svg#homme"></use>
             </svg>
           </div>
-          <h4 class="author author--male">Jean-Noël</h4>
+          <h4
+            itemprop="author"
+            itemscope
+            itemtype="https://schema.org/Person"
+            class="author author--male"
+          >
+            <span itemprop="name">Jean-Noël</span>
+          </h4>
         </div>
         <div
+          itemscope
+          itemtype="https://schema.org/Review"
           class="card card--shadow card--testimonial"
           data-aos="fade-up"
           data-aos-delay="100"
@@ -2381,12 +2392,14 @@
         >
           <h3
             itemprop="itemReviewed"
+            itemscope
+            itemtype="https://schema.org/Organization"
             class="card__heading"
             data-aos="zoom-in"
             data-aos-delay="300"
             data-aos-easing="ease-out"
           >
-            cours de pâtisserie
+            <span itemprop="name">cours de pâtisserie</span>
           </h3>
           <p itemprop="reviewBody">
             Le chef Petru Hamon m'a donné des cours de pâtisserie. Ce fut un
@@ -2412,7 +2425,14 @@
               <use xlink:href="medias/pictos/svg/sprite.svg#femme"></use>
             </svg>
           </div>
-          <h4 class="author author--female">Marine</h4>
+          <h4
+            itemprop="author"
+            itemscope
+            itemtype="https://schema.org/Person"
+            class="author author--female"
+          >
+            <span itemprop="name">Marine</span>
+          </h4>
         </div>
       </div>
       <picture>
